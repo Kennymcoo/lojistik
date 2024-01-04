@@ -177,6 +177,25 @@
             sonucSutunF = new TextBox();
             buttonExecute = new Button();
             listViewForA = new ListView();
+            buttonB = new Button();
+            buttonC = new Button();
+            buttonD = new Button();
+            buttonE = new Button();
+            buttonF = new Button();
+            listViewForB = new ListView();
+            label87 = new Label();
+            label88 = new Label();
+            label89 = new Label();
+            listViewForC = new ListView();
+            listViewForD = new ListView();
+            listViewForE = new ListView();
+            listViewForF = new ListView();
+            ListA = new Label();
+            label90 = new Label();
+            label91 = new Label();
+            label92 = new Label();
+            label93 = new Label();
+            label94 = new Label();
             SuspendLayout();
             // 
             // A
@@ -1494,7 +1513,7 @@
             // label86
             // 
             label86.AutoSize = true;
-            label86.Location = new Point(438, 324);
+            label86.Location = new Point(450, 301);
             label86.Name = "label86";
             label86.Size = new Size(713, 15);
             label86.TabIndex = 139;
@@ -1544,10 +1563,10 @@
             // 
             // buttonExecute
             // 
-            buttonExecute.Location = new Point(51, 629);
+            buttonExecute.Location = new Point(51, 617);
             buttonExecute.Margin = new Padding(3, 2, 3, 2);
             buttonExecute.Name = "buttonExecute";
-            buttonExecute.Size = new Size(82, 22);
+            buttonExecute.Size = new Size(49, 22);
             buttonExecute.TabIndex = 146;
             buttonExecute.Text = "Çalıştır";
             buttonExecute.UseVisualStyleBackColor = true;
@@ -1555,17 +1574,207 @@
             // 
             // listViewForA
             // 
-            listViewForA.Location = new Point(821, 42);
+            listViewForA.Location = new Point(743, 42);
             listViewForA.Name = "listViewForA";
-            listViewForA.Size = new Size(259, 231);
+            listViewForA.Size = new Size(69, 231);
             listViewForA.TabIndex = 147;
             listViewForA.UseCompatibleStateImageBehavior = false;
+            // 
+            // buttonB
+            // 
+            buttonB.Location = new Point(115, 617);
+            buttonB.Name = "buttonB";
+            buttonB.Size = new Size(50, 23);
+            buttonB.TabIndex = 148;
+            buttonB.Text = "button1";
+            buttonB.UseVisualStyleBackColor = true;
+            buttonB.Click += buttonB_Click;
+            // 
+            // buttonC
+            // 
+            buttonC.Location = new Point(177, 618);
+            buttonC.Name = "buttonC";
+            buttonC.Size = new Size(49, 23);
+            buttonC.TabIndex = 149;
+            buttonC.Text = "button2";
+            buttonC.UseVisualStyleBackColor = true;
+            buttonC.Click += buttonC_Click;
+            // 
+            // buttonD
+            // 
+            buttonD.Location = new Point(242, 617);
+            buttonD.Name = "buttonD";
+            buttonD.Size = new Size(49, 23);
+            buttonD.TabIndex = 150;
+            buttonD.Text = "button3";
+            buttonD.UseVisualStyleBackColor = true;
+            buttonD.Click += buttonD_Click;
+            // 
+            // buttonE
+            // 
+            buttonE.Location = new Point(306, 618);
+            buttonE.Name = "buttonE";
+            buttonE.Size = new Size(49, 23);
+            buttonE.TabIndex = 151;
+            buttonE.Text = "button4";
+            buttonE.UseVisualStyleBackColor = true;
+            buttonE.Click += buttonE_Click;
+            // 
+            // buttonF
+            // 
+            buttonF.Location = new Point(372, 618);
+            buttonF.Name = "buttonF";
+            buttonF.Size = new Size(49, 23);
+            buttonF.TabIndex = 152;
+            buttonF.Text = "button5";
+            buttonF.UseVisualStyleBackColor = true;
+            buttonF.Click += buttonF_Click;
+            // 
+            // listViewForB
+            // 
+            listViewForB.Location = new Point(834, 42);
+            listViewForB.Name = "listViewForB";
+            listViewForB.Size = new Size(69, 231);
+            listViewForB.TabIndex = 153;
+            listViewForB.UseCompatibleStateImageBehavior = false;
+            // 
+            // label87
+            // 
+            label87.AutoSize = true;
+            label87.Location = new Point(450, 342);
+            label87.Name = "label87";
+            label87.Size = new Size(702, 15);
+            label87.TabIndex = 154;
+            label87.Text = "SONUÇ = (((TABLO DEĞER 2-TABLO DEĞER 1 - BEYAZ1)*+-YEŞİL KISIM + SAR1+SARI2)+BEYAZ 2 + MAVİ + KIRMIZI * +- SİYAH)*MOR";
+            // 
+            // label88
+            // 
+            label88.AutoSize = true;
+            label88.Location = new Point(450, 274);
+            label88.Name = "label88";
+            label88.Size = new Size(66, 15);
+            label88.TabIndex = 155;
+            label88.Text = "A,C,E,F için";
+            // 
+            // label89
+            // 
+            label89.AutoSize = true;
+            label89.Location = new Point(450, 327);
+            label89.Name = "label89";
+            label89.Size = new Size(62, 15);
+            label89.TabIndex = 156;
+            label89.Text = "B ve D için";
+            // 
+            // listViewForC
+            // 
+            listViewForC.Location = new Point(930, 42);
+            listViewForC.Name = "listViewForC";
+            listViewForC.Size = new Size(69, 231);
+            listViewForC.TabIndex = 157;
+            listViewForC.UseCompatibleStateImageBehavior = false;
+            // 
+            // listViewForD
+            // 
+            listViewForD.Location = new Point(743, 367);
+            listViewForD.Name = "listViewForD";
+            listViewForD.Size = new Size(69, 231);
+            listViewForD.TabIndex = 158;
+            listViewForD.UseCompatibleStateImageBehavior = false;
+            // 
+            // listViewForE
+            // 
+            listViewForE.Location = new Point(834, 367);
+            listViewForE.Name = "listViewForE";
+            listViewForE.Size = new Size(69, 231);
+            listViewForE.TabIndex = 159;
+            listViewForE.UseCompatibleStateImageBehavior = false;
+            // 
+            // listViewForF
+            // 
+            listViewForF.Location = new Point(930, 367);
+            listViewForF.Name = "listViewForF";
+            listViewForF.Size = new Size(69, 231);
+            listViewForF.TabIndex = 160;
+            listViewForF.UseCompatibleStateImageBehavior = false;
+            // 
+            // ListA
+            // 
+            ListA.AutoSize = true;
+            ListA.Location = new Point(759, 18);
+            ListA.Name = "ListA";
+            ListA.Size = new Size(36, 15);
+            ListA.TabIndex = 161;
+            ListA.Text = "List A";
+            // 
+            // label90
+            // 
+            label90.AutoSize = true;
+            label90.Location = new Point(852, 18);
+            label90.Name = "label90";
+            label90.Size = new Size(35, 15);
+            label90.TabIndex = 162;
+            label90.Text = "List B";
+            // 
+            // label91
+            // 
+            label91.AutoSize = true;
+            label91.Location = new Point(945, 18);
+            label91.Name = "label91";
+            label91.Size = new Size(36, 15);
+            label91.TabIndex = 163;
+            label91.Text = "List C";
+            // 
+            // label92
+            // 
+            label92.AutoSize = true;
+            label92.Location = new Point(759, 617);
+            label92.Name = "label92";
+            label92.Size = new Size(36, 15);
+            label92.TabIndex = 164;
+            label92.Text = "List D";
+            // 
+            // label93
+            // 
+            label93.AutoSize = true;
+            label93.Location = new Point(852, 617);
+            label93.Name = "label93";
+            label93.Size = new Size(34, 15);
+            label93.TabIndex = 165;
+            label93.Text = "List E";
+            // 
+            // label94
+            // 
+            label94.AutoSize = true;
+            label94.Location = new Point(945, 617);
+            label94.Name = "label94";
+            label94.Size = new Size(34, 15);
+            label94.TabIndex = 166;
+            label94.Text = "List F";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1156, 672);
+            Controls.Add(label94);
+            Controls.Add(label93);
+            Controls.Add(label92);
+            Controls.Add(label91);
+            Controls.Add(label90);
+            Controls.Add(ListA);
+            Controls.Add(listViewForF);
+            Controls.Add(listViewForE);
+            Controls.Add(listViewForD);
+            Controls.Add(listViewForC);
+            Controls.Add(label89);
+            Controls.Add(label88);
+            Controls.Add(label87);
+            Controls.Add(listViewForB);
+            Controls.Add(buttonF);
+            Controls.Add(buttonE);
+            Controls.Add(buttonD);
+            Controls.Add(buttonC);
+            Controls.Add(buttonB);
             Controls.Add(listViewForA);
             Controls.Add(buttonExecute);
             Controls.Add(sonucSutunF);
@@ -1872,5 +2081,24 @@
         private TextBox sonucSutunF;
         private Button buttonExecute;
         private ListView listViewForA;
+        private Button buttonB;
+        private Button buttonC;
+        private Button buttonD;
+        private Button buttonE;
+        private Button buttonF;
+        private ListView listViewForB;
+        private Label label87;
+        private Label label88;
+        private Label label89;
+        private ListView listViewForC;
+        private ListView listViewForD;
+        private ListView listViewForE;
+        private ListView listViewForF;
+        private Label ListA;
+        private Label label90;
+        private Label label91;
+        private Label label92;
+        private Label label93;
+        private Label label94;
     }
 }
