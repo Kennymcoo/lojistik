@@ -127,7 +127,7 @@ namespace abp
             int[] tablo3 = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             int[] tablo6 = { 3, 0, 4, 10, 20, 35, 56, 84 };
 
-            int minLength = Math.Min(tablo3.Length, tablo6.Length);
+            //int minLength = Math.Min(tablo3.Length, tablo6.Length);
 
             int beyazA1 = int.Parse(textBoxA1.Text);
             int yesýlA = int.Parse(textBoxA2.Text);
@@ -139,7 +139,7 @@ namespace abp
             int sýyahA = int.Parse(textBoxA8.Text);
             int morA = int.Parse(textBoxA9.Text);
 
-            double[,] resultInA = new double[tablo3.Length, tablo6.Length];
+            //double[,] resultInA = new double[tablo3.Length, tablo6.Length];
 
             HashSet<double> uniqueValuesA = new HashSet<double>();
             listViewForA.Items.Clear();
@@ -168,7 +168,7 @@ namespace abp
             int[] tablo4 = { 8, 0, 6, 21, 56, 126 };
             int[] tablo1 = { 2, 0, 3, 6, 10, 15, 21, 28, 36 };
 
-            int minLength = Math.Min(tablo4.Length, tablo1.Length);
+            //int minLength = Math.Min(tablo4.Length, tablo1.Length);
 
             int beyazB1 = int.Parse(textBoxB1.Text);
             int yesýlB = int.Parse(textBoxB2.Text);
@@ -180,7 +180,7 @@ namespace abp
             int sýyahB = int.Parse(textBoxB8.Text);
             int morB = int.Parse(textBoxB9.Text);
 
-            double[,] resultInB = new double[tablo4.Length, tablo1.Length];
+            //double[,] resultInB = new double[tablo4.Length, tablo1.Length];
             HashSet<double> uniqueValuesB = new HashSet<double>();
             listViewForB.Items.Clear();
 
@@ -206,7 +206,7 @@ namespace abp
             int[] tablo5 = { 0, 0, 5, 15, 35, 70, 126 };
             int[] tablo2 = { 1, 0, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-            int minLength = Math.Min(tablo5.Length, tablo2.Length);
+           // int minLength = Math.Min(tablo5.Length, tablo2.Length);
 
             int beyazC1 = int.Parse(textBoxC1.Text);
             int yesýlC = int.Parse(textBoxC2.Text);
@@ -218,7 +218,7 @@ namespace abp
             int sýyahC = int.Parse(textBoxC8.Text);
             int morC = int.Parse(textBoxC9.Text);
 
-            double[,] resultInC = new double[tablo5.Length, tablo2.Length];
+            //double[,] resultInC = new double[tablo5.Length, tablo2.Length];
             HashSet<double> uniqueValuesC = new HashSet<double>();
             listViewForC.Items.Clear();
 
@@ -245,7 +245,7 @@ namespace abp
             int[] tablo3 = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 
-            int minLength = Math.Min(tablo6.Length, tablo3.Length);
+            //int minLength = Math.Min(tablo6.Length, tablo3.Length);
 
             int beyazD1 = int.Parse(textBoxD1.Text);
             int yesýlD = int.Parse(textBoxD2.Text);
@@ -257,7 +257,7 @@ namespace abp
             int sýyahD = int.Parse(textBoxD8.Text);
             int morD = int.Parse(textBoxD9.Text);
 
-            double[,] resultInD = new double[tablo6.Length, tablo3.Length];
+            //double[,] resultInD = new double[tablo6.Length, tablo3.Length];
             HashSet<double> uniqueValuesD = new HashSet<double>();
             listViewForD.Items.Clear();
 
@@ -284,7 +284,7 @@ namespace abp
             int[] tablo4 = { 8, 0, 6, 21, 56, 126 };
 
 
-            int minLength = Math.Min(tablo1.Length, tablo4.Length);
+            //int minLength = Math.Min(tablo1.Length, tablo4.Length);
 
 
             int beyazE1 = int.Parse(textBoxE1.Text);
@@ -297,7 +297,7 @@ namespace abp
             int sýyahE = int.Parse(textBoxE8.Text);
             int morE = int.Parse(textBoxE9.Text);
 
-            double[,] resultInE = new double[tablo1.Length, tablo4.Length];
+            //double[,] resultInE = new double[tablo1.Length, tablo4.Length];
             HashSet<double> uniqueValuesE = new HashSet<double>();
             listViewForE.Items.Clear();
 
@@ -324,7 +324,7 @@ namespace abp
             int[] tablo5 = { 0, 0, 5, 15, 35, 70, 126 };
             
 
-            int minLength = Math.Min(tablo2.Length, tablo5.Length);
+            //int minLength = Math.Min(tablo2.Length, tablo5.Length);
 
             int beyazF1 = int.Parse(textBoxF1.Text);
             int yesýlF = int.Parse(textBoxF2.Text);
@@ -336,7 +336,7 @@ namespace abp
             int sýyahF = int.Parse(textBoxF8.Text);
             int morF = int.Parse(textBoxF9.Text);
 
-            double[,] resultInF = new double[tablo2.Length, tablo5.Length];
+            //double[,] resultInF = new double[tablo2.Length, tablo5.Length];
             HashSet<double> uniqueValuesF = new HashSet<double>();
             listViewForF.Items.Clear();
 
