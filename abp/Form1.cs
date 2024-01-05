@@ -141,19 +141,26 @@ namespace abp
 
             double[,] resultInA = new double[tablo3.Length, tablo6.Length];
 
+            HashSet<double> uniqueValuesA = new HashSet<double>();
+            listViewForA.Items.Clear();
+
             for (int i = 0; i < tablo3.Length; i++)
             {
                 for (int x = 0; x < tablo6.Length; x++)
                 {
-                    resultInA[i, x] = (((tablo3[i] + tablo6[x] + beyazA1) * yesýlA + sarýA1 + sarýA2) + beyazA2 + mavýA + kýrmýzýA * sýyahA) * morA;
+                    double valueForA = (((tablo3[i] + tablo6[x] + beyazA1) * yesýlA + sarýA1 + sarýA2) + beyazA2 + mavýA + kýrmýzýA * sýyahA) * morA;
+
+                    
+                    if (uniqueValuesA.Add(valueForA) && valueForA <= 90 && valueForA >=-90)
+                    {
+                        
+                        listViewForA.Items.Add(valueForA.ToString());
+                        
+                    }
                 }
             }
+            
 
-            listViewForA.Items.Clear();
-            foreach (int sonucA in resultInA)
-            {
-                listViewForA.Items.Add(sonucA.ToString());
-            }
         }
 
         private void buttonB_Click(object sender, EventArgs e)
@@ -174,20 +181,24 @@ namespace abp
             int morB = int.Parse(textBoxB9.Text);
 
             double[,] resultInB = new double[tablo4.Length, tablo1.Length];
+            HashSet<double> uniqueValuesB = new HashSet<double>();
+            listViewForB.Items.Clear();
 
             for (int i = 0; i < tablo4.Length; i++)
             {
                 for (int x = 0; x < tablo1.Length; x++)
                 {
-                    resultInB[i, x] = (((tablo4[i] - tablo1[x] - beyazB1) * yesýlB + sarýB1 + sarýB2) + beyazB2 + mavýB + kýrmýzýB * sýyahB) * morB;
+                    double valueForB = (((tablo4[i] - tablo1[x] - beyazB1) * yesýlB + sarýB1 + sarýB2) + beyazB2 + mavýB + kýrmýzýB * sýyahB) * morB;
+                    if (uniqueValuesB.Add(valueForB) && valueForB <= 90 && valueForB >= -90)
+                    {
+                        
+                        listViewForB.Items.Add(valueForB.ToString());
+                    }
                 }
             }
+            //listViewForB.Items.Clear();
 
-            listViewForB.Items.Clear();
-            foreach (int sonucB in resultInB)
-            {
-                listViewForB.Items.Add(sonucB.ToString());
-            }
+          
         }
 
         private void buttonC_Click(object sender, EventArgs e)
@@ -208,20 +219,24 @@ namespace abp
             int morC = int.Parse(textBoxC9.Text);
 
             double[,] resultInC = new double[tablo5.Length, tablo2.Length];
+            HashSet<double> uniqueValuesC = new HashSet<double>();
+            listViewForC.Items.Clear();
 
             for (int i = 0; i < tablo5.Length; i++)
             {
                 for (int x = 0; x < tablo2.Length; x++)
                 {
-                    resultInC[i, x] = (((tablo5[i] + tablo2[x] + beyazC1) * yesýlC + sarýC1 + sarýC2) + beyazC2 + mavýC + kýrmýzýC * sýyahC) * morC;
+                    double valueForC = (((tablo5[i] + tablo2[x] + beyazC1) * yesýlC + sarýC1 + sarýC2) + beyazC2 + mavýC + kýrmýzýC * sýyahC) * morC;
+                    if (uniqueValuesC.Add(valueForC) && valueForC <= 90 && valueForC >= -90)
+                    {
+                        
+                        listViewForC.Items.Add(valueForC.ToString());
+                    }
                 }
             }
 
-            listViewForC.Items.Clear();
-            foreach (int sonucC in resultInC)
-            {
-                listViewForC.Items.Add(sonucC.ToString());
-            }
+            //listViewForC.Items.Clear();
+          
         }
 
         private void buttonD_Click(object sender, EventArgs e)
@@ -230,7 +245,7 @@ namespace abp
             int[] tablo3 = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 
-            int minLength = Math.Min(tablo3.Length, tablo6.Length);
+            int minLength = Math.Min(tablo6.Length, tablo3.Length);
 
             int beyazD1 = int.Parse(textBoxD1.Text);
             int yesýlD = int.Parse(textBoxD2.Text);
@@ -242,21 +257,25 @@ namespace abp
             int sýyahD = int.Parse(textBoxD8.Text);
             int morD = int.Parse(textBoxD9.Text);
 
-            double[,] resultInD = new double[tablo3.Length, tablo6.Length];
+            double[,] resultInD = new double[tablo6.Length, tablo3.Length];
+            HashSet<double> uniqueValuesD = new HashSet<double>();
+            listViewForD.Items.Clear();
 
-            for (int i = 0; i < tablo3.Length; i++)
+            for (int i = 0; i < tablo6.Length; i++)
             {
-                for (int x = 0; x < tablo6.Length; x++)
+                for (int x = 0; x < tablo3.Length; x++)
                 {
-                    resultInD[i, x] = (((tablo3[i] - tablo6[x] - beyazD1) * yesýlD + sarýD1 + sarýD2) + beyazD2 + mavýD + kýrmýzýD * sýyahD) * morD;
+                    double valueForD = (((tablo6[i] - tablo3[x] - beyazD1) * yesýlD + sarýD1 + sarýD2) + beyazD2 + mavýD + kýrmýzýD * sýyahD) * morD;
+                    if (uniqueValuesD.Add(valueForD) && valueForD <= 90 && valueForD >= -90)
+                    {
+                        
+                        listViewForD.Items.Add(valueForD.ToString());
+                    }
                 }
             }
 
-            listViewForD.Items.Clear();
-            foreach (int sonucD in resultInD)
-            {
-                listViewForD.Items.Add(sonucD.ToString());
-            }
+           
+            
         }
 
         private void buttonE_Click(object sender, EventArgs e)
@@ -266,6 +285,7 @@ namespace abp
 
 
             int minLength = Math.Min(tablo1.Length, tablo4.Length);
+
 
             int beyazE1 = int.Parse(textBoxE1.Text);
             int yesýlE = int.Parse(textBoxE2.Text);
@@ -278,20 +298,24 @@ namespace abp
             int morE = int.Parse(textBoxE9.Text);
 
             double[,] resultInE = new double[tablo1.Length, tablo4.Length];
+            HashSet<double> uniqueValuesE = new HashSet<double>();
+            listViewForE.Items.Clear();
 
             for (int i = 0; i < tablo1.Length; i++)
             {
                 for (int x = 0; x < tablo4.Length; x++)
                 {
-                    resultInE[i, x] = (((tablo1[i]  + tablo4[x] + beyazE1) * yesýlE + sarýE1 + sarýE2) + beyazE2 + mavýE + kýrmýzýE * sýyahE) * morE;
+                    double valueForE = (((tablo1[i]  + tablo4[x] + beyazE1) * yesýlE + sarýE1 + sarýE2) + beyazE2 + mavýE + kýrmýzýE * sýyahE) * morE;
+                    if (uniqueValuesE.Add(valueForE) && valueForE <= 90 && valueForE >= -90)
+                    {
+                        
+                        listViewForE.Items.Add(valueForE.ToString());
+                    }
                 }
             }
 
-            listViewForE.Items.Clear();
-            foreach (int sonucE in resultInE)
-            {
-                listViewForE.Items.Add(sonucE.ToString());
-            }
+            
+            
         }
 
         private void buttonF_Click(object sender, EventArgs e)
@@ -313,27 +337,28 @@ namespace abp
             int morF = int.Parse(textBoxF9.Text);
 
             double[,] resultInF = new double[tablo2.Length, tablo5.Length];
+            HashSet<double> uniqueValuesF = new HashSet<double>();
+            listViewForF.Items.Clear();
 
             for (int i = 0; i < tablo2.Length; i++)
             {
                 for (int x = 0; x < tablo5.Length; x++)
                 {
-                    resultInF[i, x] = (((tablo2[i] + tablo5[x] + beyazF1) * yesýlF + sarýF1 + sarýF2) + beyazF2 + mavýF + kýrmýzýF * sýyahF) * morF;
+                    double valueForF = (((tablo2[i] + tablo5[x] + beyazF1) * yesýlF + sarýF1 + sarýF2) + beyazF2 + mavýF + kýrmýzýF * sýyahF) * morF;
+                    if (uniqueValuesF.Add(valueForF) && valueForF <= 90 && valueForF >= -90)
+                    {
+                        
+                        listViewForF.Items.Add(valueForF.ToString());
+                    }
                 }
             }
 
-            listViewForF.Items.Clear();
-            foreach (int sonucF in resultInF)
-            {
-                listViewForF.Items.Add(sonucF.ToString());
-            }
+            
+          
         }
 
 
-        //for (int i = 0; i < minLength; i++)
-        //{
-        //    resultInA[i] = (((tablo3[i] + tablo6[i] + beyazA1)* yesýlA+sarýA1+sarýA2)+beyazA2+mavýA+kýrmýzýA * (-1*sýyahA))*morA;
-        //}
+       
 
 
 
