@@ -1,4 +1,5 @@
-﻿namespace abp
+﻿
+namespace abp
 {
     partial class Form1
     {
@@ -259,6 +260,7 @@
             textBoxA1.Name = "textBoxA1";
             textBoxA1.Size = new Size(49, 23);
             textBoxA1.TabIndex = 6;
+            textBoxA1.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA2
             // 
@@ -267,6 +269,7 @@
             textBoxA2.Name = "textBoxA2";
             textBoxA2.Size = new Size(49, 23);
             textBoxA2.TabIndex = 7;
+            textBoxA2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA4
             // 
@@ -275,6 +278,7 @@
             textBoxA4.Name = "textBoxA4";
             textBoxA4.Size = new Size(49, 23);
             textBoxA4.TabIndex = 8;
+            textBoxA4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA3
             // 
@@ -283,6 +287,7 @@
             textBoxA3.Name = "textBoxA3";
             textBoxA3.Size = new Size(49, 23);
             textBoxA3.TabIndex = 8;
+            textBoxA3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA5
             // 
@@ -290,6 +295,7 @@
             textBoxA5.Name = "textBoxA5";
             textBoxA5.Size = new Size(49, 23);
             textBoxA5.TabIndex = 9;
+            textBoxA5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA6
             // 
@@ -298,6 +304,7 @@
             textBoxA6.Name = "textBoxA6";
             textBoxA6.Size = new Size(49, 23);
             textBoxA6.TabIndex = 10;
+            textBoxA6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA7
             // 
@@ -306,6 +313,7 @@
             textBoxA7.Name = "textBoxA7";
             textBoxA7.Size = new Size(49, 23);
             textBoxA7.TabIndex = 11;
+            textBoxA7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA8
             // 
@@ -315,6 +323,7 @@
             textBoxA8.Name = "textBoxA8";
             textBoxA8.Size = new Size(49, 23);
             textBoxA8.TabIndex = 12;
+            textBoxA8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxA9
             // 
@@ -323,6 +332,7 @@
             textBoxA9.Name = "textBoxA9";
             textBoxA9.Size = new Size(49, 23);
             textBoxA9.TabIndex = 13;
+            textBoxA9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB9
             // 
@@ -331,6 +341,7 @@
             textBoxB9.Name = "textBoxB9";
             textBoxB9.Size = new Size(49, 23);
             textBoxB9.TabIndex = 22;
+            textBoxB9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB8
             // 
@@ -340,6 +351,7 @@
             textBoxB8.Name = "textBoxB8";
             textBoxB8.Size = new Size(49, 23);
             textBoxB8.TabIndex = 21;
+            textBoxB8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB7
             // 
@@ -348,6 +360,7 @@
             textBoxB7.Name = "textBoxB7";
             textBoxB7.Size = new Size(49, 23);
             textBoxB7.TabIndex = 20;
+            textBoxB7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB6
             // 
@@ -356,6 +369,7 @@
             textBoxB6.Name = "textBoxB6";
             textBoxB6.Size = new Size(49, 23);
             textBoxB6.TabIndex = 19;
+            textBoxB6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB5
             // 
@@ -363,6 +377,7 @@
             textBoxB5.Name = "textBoxB5";
             textBoxB5.Size = new Size(49, 23);
             textBoxB5.TabIndex = 18;
+            textBoxB5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB3
             // 
@@ -371,6 +386,7 @@
             textBoxB3.Name = "textBoxB3";
             textBoxB3.Size = new Size(49, 23);
             textBoxB3.TabIndex = 16;
+            textBoxB3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB4
             // 
@@ -379,6 +395,7 @@
             textBoxB4.Name = "textBoxB4";
             textBoxB4.Size = new Size(49, 23);
             textBoxB4.TabIndex = 17;
+            textBoxB4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB2
             // 
@@ -387,6 +404,7 @@
             textBoxB2.Name = "textBoxB2";
             textBoxB2.Size = new Size(49, 23);
             textBoxB2.TabIndex = 15;
+            textBoxB2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxB1
             // 
@@ -394,6 +412,7 @@
             textBoxB1.Name = "textBoxB1";
             textBoxB1.Size = new Size(49, 23);
             textBoxB1.TabIndex = 14;
+            textBoxB1.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC9
             // 
@@ -402,6 +421,7 @@
             textBoxC9.Name = "textBoxC9";
             textBoxC9.Size = new Size(49, 23);
             textBoxC9.TabIndex = 31;
+            textBoxC9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC8
             // 
@@ -411,6 +431,7 @@
             textBoxC8.Name = "textBoxC8";
             textBoxC8.Size = new Size(49, 23);
             textBoxC8.TabIndex = 30;
+            textBoxC8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC7
             // 
@@ -419,6 +440,7 @@
             textBoxC7.Name = "textBoxC7";
             textBoxC7.Size = new Size(49, 23);
             textBoxC7.TabIndex = 29;
+            textBoxC7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC6
             // 
@@ -427,6 +449,7 @@
             textBoxC6.Name = "textBoxC6";
             textBoxC6.Size = new Size(49, 23);
             textBoxC6.TabIndex = 28;
+            textBoxC6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC5
             // 
@@ -434,6 +457,7 @@
             textBoxC5.Name = "textBoxC5";
             textBoxC5.Size = new Size(49, 23);
             textBoxC5.TabIndex = 27;
+            textBoxC5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC3
             // 
@@ -442,6 +466,7 @@
             textBoxC3.Name = "textBoxC3";
             textBoxC3.Size = new Size(49, 23);
             textBoxC3.TabIndex = 25;
+            textBoxC3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC4
             // 
@@ -450,6 +475,7 @@
             textBoxC4.Name = "textBoxC4";
             textBoxC4.Size = new Size(49, 23);
             textBoxC4.TabIndex = 26;
+            textBoxC4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC2
             // 
@@ -458,6 +484,7 @@
             textBoxC2.Name = "textBoxC2";
             textBoxC2.Size = new Size(49, 23);
             textBoxC2.TabIndex = 24;
+            textBoxC2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxC1
             // 
@@ -465,6 +492,7 @@
             textBoxC1.Name = "textBoxC1";
             textBoxC1.Size = new Size(49, 23);
             textBoxC1.TabIndex = 23;
+            textBoxC1.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD9
             // 
@@ -473,6 +501,7 @@
             textBoxD9.Name = "textBoxD9";
             textBoxD9.Size = new Size(49, 23);
             textBoxD9.TabIndex = 40;
+            textBoxD9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD8
             // 
@@ -482,6 +511,7 @@
             textBoxD8.Name = "textBoxD8";
             textBoxD8.Size = new Size(49, 23);
             textBoxD8.TabIndex = 39;
+            textBoxD8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD7
             // 
@@ -490,6 +520,7 @@
             textBoxD7.Name = "textBoxD7";
             textBoxD7.Size = new Size(49, 23);
             textBoxD7.TabIndex = 38;
+            textBoxD7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD6
             // 
@@ -498,6 +529,7 @@
             textBoxD6.Name = "textBoxD6";
             textBoxD6.Size = new Size(49, 23);
             textBoxD6.TabIndex = 37;
+            textBoxD6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD5
             // 
@@ -505,6 +537,7 @@
             textBoxD5.Name = "textBoxD5";
             textBoxD5.Size = new Size(49, 23);
             textBoxD5.TabIndex = 36;
+            textBoxD5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD3
             // 
@@ -513,6 +546,7 @@
             textBoxD3.Name = "textBoxD3";
             textBoxD3.Size = new Size(49, 23);
             textBoxD3.TabIndex = 34;
+            textBoxD3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD4
             // 
@@ -521,6 +555,7 @@
             textBoxD4.Name = "textBoxD4";
             textBoxD4.Size = new Size(49, 23);
             textBoxD4.TabIndex = 35;
+            textBoxD4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD2
             // 
@@ -529,6 +564,7 @@
             textBoxD2.Name = "textBoxD2";
             textBoxD2.Size = new Size(49, 23);
             textBoxD2.TabIndex = 33;
+            textBoxD2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxD1
             // 
@@ -536,6 +572,7 @@
             textBoxD1.Name = "textBoxD1";
             textBoxD1.Size = new Size(49, 23);
             textBoxD1.TabIndex = 32;
+            textBoxD1.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE9
             // 
@@ -544,6 +581,7 @@
             textBoxE9.Name = "textBoxE9";
             textBoxE9.Size = new Size(49, 23);
             textBoxE9.TabIndex = 49;
+            textBoxE9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE8
             // 
@@ -553,6 +591,7 @@
             textBoxE8.Name = "textBoxE8";
             textBoxE8.Size = new Size(49, 23);
             textBoxE8.TabIndex = 48;
+            textBoxE8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE7
             // 
@@ -561,6 +600,7 @@
             textBoxE7.Name = "textBoxE7";
             textBoxE7.Size = new Size(49, 23);
             textBoxE7.TabIndex = 47;
+            textBoxE7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE6
             // 
@@ -569,6 +609,7 @@
             textBoxE6.Name = "textBoxE6";
             textBoxE6.Size = new Size(49, 23);
             textBoxE6.TabIndex = 46;
+            textBoxE6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE5
             // 
@@ -576,6 +617,7 @@
             textBoxE5.Name = "textBoxE5";
             textBoxE5.Size = new Size(49, 23);
             textBoxE5.TabIndex = 45;
+            textBoxE5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE3
             // 
@@ -584,6 +626,7 @@
             textBoxE3.Name = "textBoxE3";
             textBoxE3.Size = new Size(49, 23);
             textBoxE3.TabIndex = 43;
+            textBoxE3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE4
             // 
@@ -592,6 +635,7 @@
             textBoxE4.Name = "textBoxE4";
             textBoxE4.Size = new Size(49, 23);
             textBoxE4.TabIndex = 44;
+            textBoxE4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE2
             // 
@@ -600,6 +644,7 @@
             textBoxE2.Name = "textBoxE2";
             textBoxE2.Size = new Size(49, 23);
             textBoxE2.TabIndex = 42;
+            textBoxE2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxE1
             // 
@@ -607,6 +652,7 @@
             textBoxE1.Name = "textBoxE1";
             textBoxE1.Size = new Size(49, 23);
             textBoxE1.TabIndex = 41;
+            textBoxE1.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF9
             // 
@@ -615,6 +661,7 @@
             textBoxF9.Name = "textBoxF9";
             textBoxF9.Size = new Size(49, 23);
             textBoxF9.TabIndex = 58;
+            textBoxF9.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF8
             // 
@@ -624,6 +671,7 @@
             textBoxF8.Name = "textBoxF8";
             textBoxF8.Size = new Size(49, 23);
             textBoxF8.TabIndex = 57;
+            textBoxF8.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF7
             // 
@@ -632,6 +680,7 @@
             textBoxF7.Name = "textBoxF7";
             textBoxF7.Size = new Size(49, 23);
             textBoxF7.TabIndex = 56;
+            textBoxF7.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF6
             // 
@@ -640,6 +689,7 @@
             textBoxF6.Name = "textBoxF6";
             textBoxF6.Size = new Size(49, 23);
             textBoxF6.TabIndex = 55;
+            textBoxF6.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF5
             // 
@@ -647,6 +697,7 @@
             textBoxF5.Name = "textBoxF5";
             textBoxF5.Size = new Size(49, 23);
             textBoxF5.TabIndex = 54;
+            textBoxF5.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF3
             // 
@@ -655,6 +706,7 @@
             textBoxF3.Name = "textBoxF3";
             textBoxF3.Size = new Size(49, 23);
             textBoxF3.TabIndex = 52;
+            textBoxF3.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF4
             // 
@@ -663,6 +715,7 @@
             textBoxF4.Name = "textBoxF4";
             textBoxF4.Size = new Size(49, 23);
             textBoxF4.TabIndex = 53;
+            textBoxF4.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF2
             // 
@@ -671,6 +724,7 @@
             textBoxF2.Name = "textBoxF2";
             textBoxF2.Size = new Size(49, 23);
             textBoxF2.TabIndex = 51;
+            textBoxF2.KeyPress += TextBox_KeyPress;
             // 
             // textBoxF1
             // 
@@ -678,6 +732,7 @@
             textBoxF1.Name = "textBoxF1";
             textBoxF1.Size = new Size(49, 23);
             textBoxF1.TabIndex = 50;
+            textBoxF1.KeyPress += TextBox_KeyPress;
             // 
             // label1
             // 
@@ -1941,6 +1996,8 @@
             ResumeLayout(false);
             PerformLayout();
         }
+
+
 
         #endregion
 
