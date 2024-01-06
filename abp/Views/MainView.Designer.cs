@@ -1,7 +1,7 @@
 ﻿
 namespace abp
 {
-    partial class Form1
+    partial class MainView
     {
         /// <summary>
         ///  Required designer variable.
@@ -1626,7 +1626,7 @@ namespace abp
             buttonExecute.TabIndex = 146;
             buttonExecute.Text = "Çalıştır";
             buttonExecute.UseVisualStyleBackColor = true;
-            buttonExecute.Click += buttonExecute_Click;
+            buttonExecute.Click += ButtonA_Click;
             // 
             // listViewForA
             // 
@@ -1644,7 +1644,7 @@ namespace abp
             buttonB.TabIndex = 148;
             buttonB.Text = "button1";
             buttonB.UseVisualStyleBackColor = true;
-            buttonB.Click += buttonB_Click;
+            buttonB.Click += ButtonB_Click;
             // 
             // buttonC
             // 
@@ -1654,7 +1654,7 @@ namespace abp
             buttonC.TabIndex = 149;
             buttonC.Text = "button2";
             buttonC.UseVisualStyleBackColor = true;
-            buttonC.Click += buttonC_Click;
+            buttonC.Click += ButtonC_Click;
             // 
             // buttonD
             // 
@@ -1664,7 +1664,7 @@ namespace abp
             buttonD.TabIndex = 150;
             buttonD.Text = "button3";
             buttonD.UseVisualStyleBackColor = true;
-            buttonD.Click += buttonD_Click;
+            buttonD.Click += ButtonD_Click;
             // 
             // buttonE
             // 
@@ -1674,7 +1674,7 @@ namespace abp
             buttonE.TabIndex = 151;
             buttonE.Text = "button4";
             buttonE.UseVisualStyleBackColor = true;
-            buttonE.Click += buttonE_Click;
+            buttonE.Click += ButtonE_Click;
             // 
             // buttonF
             // 
@@ -1684,7 +1684,7 @@ namespace abp
             buttonF.TabIndex = 152;
             buttonF.Text = "button5";
             buttonF.UseVisualStyleBackColor = true;
-            buttonF.Click += buttonF_Click;
+            buttonF.Click += ButtonF_Click;
             // 
             // listViewForB
             // 
@@ -1815,7 +1815,7 @@ namespace abp
             button1.TabIndex = 167;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += ButtonExecuteAll_Click;
             // 
             // Form1
             // 
