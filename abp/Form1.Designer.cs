@@ -196,6 +196,7 @@
             label92 = new Label();
             label93 = new Label();
             label94 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // A
@@ -292,7 +293,7 @@
             // 
             // textBoxA6
             // 
-            textBoxA6.BackColor = Color.Navy;
+            textBoxA6.BackColor = Color.DodgerBlue;
             textBoxA6.Location = new Point(51, 298);
             textBoxA6.Name = "textBoxA6";
             textBoxA6.Size = new Size(49, 23);
@@ -350,7 +351,7 @@
             // 
             // textBoxB6
             // 
-            textBoxB6.BackColor = Color.Navy;
+            textBoxB6.BackColor = Color.DodgerBlue;
             textBoxB6.Location = new Point(116, 298);
             textBoxB6.Name = "textBoxB6";
             textBoxB6.Size = new Size(49, 23);
@@ -421,7 +422,7 @@
             // 
             // textBoxC6
             // 
-            textBoxC6.BackColor = Color.Navy;
+            textBoxC6.BackColor = Color.DodgerBlue;
             textBoxC6.Location = new Point(177, 298);
             textBoxC6.Name = "textBoxC6";
             textBoxC6.Size = new Size(49, 23);
@@ -492,7 +493,7 @@
             // 
             // textBoxD6
             // 
-            textBoxD6.BackColor = Color.Navy;
+            textBoxD6.BackColor = Color.DodgerBlue;
             textBoxD6.Location = new Point(242, 298);
             textBoxD6.Name = "textBoxD6";
             textBoxD6.Size = new Size(49, 23);
@@ -563,7 +564,7 @@
             // 
             // textBoxE6
             // 
-            textBoxE6.BackColor = Color.Navy;
+            textBoxE6.BackColor = Color.DodgerBlue;
             textBoxE6.Location = new Point(306, 298);
             textBoxE6.Name = "textBoxE6";
             textBoxE6.Size = new Size(49, 23);
@@ -634,7 +635,7 @@
             // 
             // textBoxF6
             // 
-            textBoxF6.BackColor = Color.Navy;
+            textBoxF6.BackColor = Color.DodgerBlue;
             textBoxF6.Location = new Point(372, 298);
             textBoxF6.Name = "textBoxF6";
             textBoxF6.Size = new Size(49, 23);
@@ -1751,11 +1752,22 @@
             label94.TabIndex = 166;
             label94.Text = "List F";
             // 
+            // button1
+            // 
+            button1.Location = new Point(450, 616);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 167;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1156, 672);
+            Controls.Add(button1);
             Controls.Add(label94);
             Controls.Add(label93);
             Controls.Add(label92);
@@ -2100,5 +2112,6 @@
         private Label label92;
         private Label label93;
         private Label label94;
+        private Button button1;
     }
 }
