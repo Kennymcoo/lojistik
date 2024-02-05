@@ -4,8 +4,8 @@ internal static class TextboxValueExtractionTool
 {
     internal static bool Extract(TextBox[] textBoxes, out int[] result)
     {
-        //if (textBoxes.Length != 9)
-        //    throw new Exception("9 adet textbox girilmedi");
+        if (textBoxes.Length != 9)
+            throw new Exception("9 adet textbox girilmedi");
  
         result = new int[textBoxes.Length];
         for (int index = 0; index < textBoxes.Length; index++) 

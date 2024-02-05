@@ -32,46 +32,70 @@ public partial class MainView : Form
 
         
     }
+    private static void FillListViewWithItems(ListView listview, List<string> listItems)
+    {
+        foreach (string item in listItems)
+        {
+            listview.Items.Add(item);
+        }
+
+
+    }
 
     private void ButtonA_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxA1, textBoxA2, textBoxA3, textBoxA4, textBoxA5, textBoxA6, textBoxA7, textBoxA8, textBoxA9];
+        
 
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.A, values);
-       
 
+        listViewForA.Items.Clear();
         FillListViewWithResults(listViewForA, result );
+
+
+       // List<string> listItemsA = new List<string>();
+
+        //foreach (ListViewItem item in listViewForA.Items)
+        //{
+        //    listItemsA.Add(item.ToString());
+        //}
+        //List<ListViewItem> viewItemsA = new List<ListViewItem>();
+        //viewItemsA.AddRange(listViewForA.Items.OfType<ListViewItem>());
+
+        
+
     }
 
-    
+   
 
     private void ButtonB_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxB1, textBoxB2, textBoxB3, textBoxB4, textBoxB5, textBoxB6, textBoxB7, textBoxB8, textBoxB9];
-
+        
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.B, values);
         
-
+        listViewForB.Items.Clear();
         FillListViewWithResults(listViewForB, result);
     }
 
     private void ButtonC_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxC1, textBoxC2, textBoxC3, textBoxC4, textBoxC5, textBoxC6, textBoxC7, textBoxC8, textBoxC9];
-
+        
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.C, values);
-        
 
+        listViewForC.Items.Clear();
         FillListViewWithResults(listViewForC, result);
+       
     }
 
     private void ButtonD_Click(object sender, EventArgs e)
@@ -83,7 +107,7 @@ public partial class MainView : Form
 
         var result = _viewModel.ExecuteColumn(Columns.D, values);
         
-
+        listViewForD.Items.Clear();
         FillListViewWithResults(listViewForD, result);
     }
 
@@ -96,7 +120,7 @@ public partial class MainView : Form
 
         var result = _viewModel.ExecuteColumn(Columns.E, values);
         
-
+        listViewForE.Items.Clear();
         FillListViewWithResults(listViewForE, result);    
     }
 
@@ -109,40 +133,74 @@ public partial class MainView : Form
 
         var result = _viewModel.ExecuteColumn(Columns.F, values);
        
-
+        listViewForF.Items.Clear();
         FillListViewWithResults(listViewForF, result);          
     }
 
     private void ButtonExecuteAll_Click(object sender, EventArgs e)
     {
+        ButtonA_Click(sender, e);
+        ButtonB_Click(sender, e);
+        ButtonC_Click(sender, e);
+        ButtonD_Click(sender, e);
+        ButtonE_Click(sender, e);
+        ButtonF_Click(sender, e);
 
-        for (int i = 0; i < 9; i++)
+        
+
+        List<string> listItemsA = new List<string>();
+        foreach (ListViewItem item in listViewForA.Items)
         {
-            char columnChar = (char)('A' + i);
-            string columnName = "listViewFor" + columnChar;
-
-            
-            TextBox[] textBoxes = Controls.OfType<TextBox>()
-                                          .Where(tb => tb.Name.StartsWith("textBox" + columnChar))
-                                          .OrderBy(tb => tb.Name)
-                                          .ToArray();
-
-            if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
-                return;
-
-            
-            var result = _viewModel.ExecuteColumn((Columns)columnChar, values);
-
-            
-            FillListViewWithResults(listViewShowAll, result);
+            listItemsA.Add(item.ToString());
         }
-        //ButtonA_Click(sender, e);
-        //ButtonB_Click(sender, e);
-        //ButtonC_Click(sender, e);
-        //ButtonD_Click(sender, e);
-        //ButtonE_Click(sender, e);
-        //ButtonF_Click(sender, e);
+        List<string> listItemsB = new List<string>();
+        foreach (ListViewItem item in listViewForB.Items)
+        {
+            listItemsB.Add(item.ToString());
+        }
+        List<string> listItemsC = new List<string>();
+        foreach (ListViewItem item in listViewForC.Items)
+        {
+            listItemsC.Add(item.ToString());
+        }
+        List<string> listItemsD = new List<string>();
+        foreach (ListViewItem item in listViewForD.Items)
+        {
+            listItemsD.Add(item.ToString());
+        }
+        List<string> listItemsE = new List<string>();
+        foreach (ListViewItem item in listViewForE.Items)
+        {
+            listItemsE.Add(item.ToString());
+        }
+        List<string> listItemsF = new List<string>();
+        foreach (ListViewItem item in listViewForF.Items)
+        {
+            listItemsF.Add(item.ToString());
+        }
+        List<string> result = [];
+        foreach (string itemA in listItemsA)
+        {
+            foreach (string itemB in listItemsB)
+            {
+                foreach (string itemC in listItemsC)
+                {
+                    foreach (string itemD in listItemsD)
+                    {
+                        foreach (string itemE in listItemsE)
+                        {
+                            foreach (string itemF in listItemsF)
+                            {
+                                
+                                result.Add($"{itemA}, {itemB}, {itemC}, {itemD}, {itemE}, {itemF}");
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
+        FillListViewWithResults(listViewShowAll, result);
 
     }
 }

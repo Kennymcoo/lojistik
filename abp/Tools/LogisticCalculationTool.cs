@@ -36,7 +36,7 @@ internal static class LogisticCalculationTool
 
                 if (uniqueValuesA.Add(valueForA) && valueForA <= 90 && valueForA >= -90)
                 {
-                    result.Add($"{valueForA} ( {firstTableIndex}, {secondTableIndex})");
+                    result.Add($"{valueForA} ( Birinci sütün {firstTableIndex}, İkinci sutün {secondTableIndex})");
                 }
             }
         }
