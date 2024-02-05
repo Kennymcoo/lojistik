@@ -45,9 +45,13 @@ internal class MainViewModel
                 firstTable = [ 1, 0, 2, 3, 4, 5, 6, 7, 8, 9 ];
                 secondTable = [ 0, 0, 5, 15, 35, 70, 126 ];
                 break;
-          
+
         }
 
         return LogisticCalculationTool.Calculate(firstTable, secondTable, textboxValues, isForBandD);
     }
+  
+
+
+
 }

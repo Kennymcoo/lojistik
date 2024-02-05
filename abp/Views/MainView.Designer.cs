@@ -198,6 +198,7 @@ namespace abp
             label93 = new Label();
             label94 = new Label();
             button1 = new Button();
+            listViewShowAll = new ListView();
             SuspendLayout();
             // 
             // A
@@ -1630,9 +1631,9 @@ namespace abp
             // 
             // listViewForA
             // 
-            listViewForA.Location = new Point(743, 42);
+            listViewForA.Location = new Point(525, 36);
             listViewForA.Name = "listViewForA";
-            listViewForA.Size = new Size(69, 231);
+            listViewForA.Size = new Size(156, 231);
             listViewForA.TabIndex = 147;
             listViewForA.UseCompatibleStateImageBehavior = false;
             // 
@@ -1688,9 +1689,9 @@ namespace abp
             // 
             // listViewForB
             // 
-            listViewForB.Location = new Point(834, 42);
+            listViewForB.Location = new Point(744, 36);
             listViewForB.Name = "listViewForB";
-            listViewForB.Size = new Size(69, 231);
+            listViewForB.Size = new Size(144, 231);
             listViewForB.TabIndex = 153;
             listViewForB.UseCompatibleStateImageBehavior = false;
             // 
@@ -1723,40 +1724,40 @@ namespace abp
             // 
             // listViewForC
             // 
-            listViewForC.Location = new Point(930, 42);
+            listViewForC.Location = new Point(958, 36);
             listViewForC.Name = "listViewForC";
-            listViewForC.Size = new Size(69, 231);
+            listViewForC.Size = new Size(163, 231);
             listViewForC.TabIndex = 157;
             listViewForC.UseCompatibleStateImageBehavior = false;
             // 
             // listViewForD
             // 
-            listViewForD.Location = new Point(743, 367);
+            listViewForD.Location = new Point(525, 367);
             listViewForD.Name = "listViewForD";
-            listViewForD.Size = new Size(69, 231);
+            listViewForD.Size = new Size(156, 231);
             listViewForD.TabIndex = 158;
             listViewForD.UseCompatibleStateImageBehavior = false;
             // 
             // listViewForE
             // 
-            listViewForE.Location = new Point(834, 367);
+            listViewForE.Location = new Point(744, 367);
             listViewForE.Name = "listViewForE";
-            listViewForE.Size = new Size(69, 231);
+            listViewForE.Size = new Size(144, 231);
             listViewForE.TabIndex = 159;
             listViewForE.UseCompatibleStateImageBehavior = false;
             // 
             // listViewForF
             // 
-            listViewForF.Location = new Point(930, 367);
+            listViewForF.Location = new Point(958, 360);
             listViewForF.Name = "listViewForF";
-            listViewForF.Size = new Size(69, 231);
+            listViewForF.Size = new Size(163, 231);
             listViewForF.TabIndex = 160;
             listViewForF.UseCompatibleStateImageBehavior = false;
             // 
             // ListA
             // 
             ListA.AutoSize = true;
-            ListA.Location = new Point(759, 18);
+            ListA.Location = new Point(525, 18);
             ListA.Name = "ListA";
             ListA.Size = new Size(36, 15);
             ListA.TabIndex = 161;
@@ -1765,7 +1766,7 @@ namespace abp
             // label90
             // 
             label90.AutoSize = true;
-            label90.Location = new Point(852, 18);
+            label90.Location = new Point(744, 18);
             label90.Name = "label90";
             label90.Size = new Size(35, 15);
             label90.TabIndex = 162;
@@ -1774,7 +1775,7 @@ namespace abp
             // label91
             // 
             label91.AutoSize = true;
-            label91.Location = new Point(945, 18);
+            label91.Location = new Point(958, 18);
             label91.Name = "label91";
             label91.Size = new Size(36, 15);
             label91.TabIndex = 163;
@@ -1783,7 +1784,7 @@ namespace abp
             // label92
             // 
             label92.AutoSize = true;
-            label92.Location = new Point(759, 617);
+            label92.Location = new Point(531, 617);
             label92.Name = "label92";
             label92.Size = new Size(36, 15);
             label92.TabIndex = 164;
@@ -1792,7 +1793,7 @@ namespace abp
             // label93
             // 
             label93.AutoSize = true;
-            label93.Location = new Point(852, 617);
+            label93.Location = new Point(745, 617);
             label93.Name = "label93";
             label93.Size = new Size(34, 15);
             label93.TabIndex = 165;
@@ -1801,7 +1802,7 @@ namespace abp
             // label94
             // 
             label94.AutoSize = true;
-            label94.Location = new Point(945, 617);
+            label94.Location = new Point(960, 617);
             label94.Name = "label94";
             label94.Size = new Size(34, 15);
             label94.TabIndex = 166;
@@ -1809,19 +1810,28 @@ namespace abp
             // 
             // button1
             // 
-            button1.Location = new Point(450, 616);
+            button1.Location = new Point(1270, 609);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 167;
-            button1.Text = "button1";
+            button1.Text = "Show All";
             button1.UseVisualStyleBackColor = true;
             button1.Click += ButtonExecuteAll_Click;
             // 
-            // Form1
+            // listViewShowAll
+            // 
+            listViewShowAll.Location = new Point(1158, 36);
+            listViewShowAll.Name = "listViewShowAll";
+            listViewShowAll.Size = new Size(321, 555);
+            listViewShowAll.TabIndex = 168;
+            listViewShowAll.UseCompatibleStateImageBehavior = false;
+            // 
+            // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1156, 672);
+            ClientSize = new Size(1491, 672);
+            Controls.Add(listViewShowAll);
             Controls.Add(button1);
             Controls.Add(label94);
             Controls.Add(label93);
@@ -1991,7 +2001,7 @@ namespace abp
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(A);
-            Name = "Form1";
+            Name = "MainView";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -2170,5 +2180,6 @@ namespace abp
         private Label label93;
         private Label label94;
         private Button button1;
+        private ListView listViewShowAll;
     }
 }

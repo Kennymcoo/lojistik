@@ -1,6 +1,7 @@
 using abp.Models.Enums;
 using abp.Tools;
 using abp.ViewModels;
+using abp.Views;
 
 namespace abp;
 
@@ -22,12 +23,14 @@ public partial class MainView : Form
         }
     }
 
-    private static void FillListViewWithResults(ListView listview, List<string> result)
+    private static void FillListViewWithResults(ListView listview, List<string> result  )
     {
         foreach (string item in result)
         {
             listview.Items.Add(item);
         }
+
+        
     }
 
     private void ButtonA_Click(object sender, EventArgs e)
@@ -38,8 +41,9 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.A, values);
+       
 
-        FillListViewWithResults(listViewForA, result);
+        FillListViewWithResults(listViewForA, result );
     }
 
     
@@ -52,6 +56,7 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.B, values);
+        
 
         FillListViewWithResults(listViewForB, result);
     }
@@ -64,6 +69,7 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.C, values);
+        
 
         FillListViewWithResults(listViewForC, result);
     }
@@ -76,6 +82,7 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.D, values);
+        
 
         FillListViewWithResults(listViewForD, result);
     }
@@ -88,6 +95,7 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.E, values);
+        
 
         FillListViewWithResults(listViewForE, result);    
     }
@@ -100,17 +108,41 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.F, values);
+       
 
         FillListViewWithResults(listViewForF, result);          
     }
 
     private void ButtonExecuteAll_Click(object sender, EventArgs e)
     {
-        ButtonA_Click(sender, e);
-        ButtonB_Click(sender, e);
-        ButtonC_Click(sender, e);
-        ButtonD_Click(sender, e);
-        ButtonE_Click(sender, e);
-        ButtonF_Click(sender, e);
+
+        for (int i = 0; i < 9; i++)
+        {
+            char columnChar = (char)('A' + i);
+            string columnName = "listViewFor" + columnChar;
+
+            
+            TextBox[] textBoxes = Controls.OfType<TextBox>()
+                                          .Where(tb => tb.Name.StartsWith("textBox" + columnChar))
+                                          .OrderBy(tb => tb.Name)
+                                          .ToArray();
+
+            if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
+                return;
+
+            
+            var result = _viewModel.ExecuteColumn((Columns)columnChar, values);
+
+            
+            FillListViewWithResults(listViewShowAll, result);
+        }
+        //ButtonA_Click(sender, e);
+        //ButtonB_Click(sender, e);
+        //ButtonC_Click(sender, e);
+        //ButtonD_Click(sender, e);
+        //ButtonE_Click(sender, e);
+        //ButtonF_Click(sender, e);
+
+
     }
 }
