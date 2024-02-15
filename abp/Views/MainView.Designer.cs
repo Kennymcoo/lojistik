@@ -199,6 +199,18 @@ namespace abp
             label94 = new Label();
             button1 = new Button();
             listViewShowAll = new ListView();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox9 = new TextBox();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            textBox12 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
             SuspendLayout();
             // 
             // A
@@ -848,9 +860,8 @@ namespace abp
             label18.AutoSize = true;
             label18.Location = new Point(450, 489);
             label18.Name = "label18";
-            label18.Size = new Size(92, 15);
+            label18.Size = new Size(0, 15);
             label18.TabIndex = 71;
-            label18.Text = "TABLO 1. DEĞER";
             label18.TextAlign = ContentAlignment.TopCenter;
             // 
             // label19
@@ -858,9 +869,8 @@ namespace abp
             label19.AutoSize = true;
             label19.Location = new Point(450, 524);
             label19.Name = "label19";
-            label19.Size = new Size(92, 15);
+            label19.Size = new Size(0, 15);
             label19.TabIndex = 72;
-            label19.Text = "TABLO 2. DEĞER";
             label19.TextAlign = ContentAlignment.TopCenter;
             // 
             // label20
@@ -868,7 +878,7 @@ namespace abp
             label20.AutoSize = true;
             label20.BackColor = SystemColors.InfoText;
             label20.ForeColor = SystemColors.ButtonHighlight;
-            label20.Location = new Point(529, 125);
+            label20.Location = new Point(468, 122);
             label20.Name = "label20";
             label20.Size = new Size(13, 15);
             label20.TabIndex = 73;
@@ -879,29 +889,27 @@ namespace abp
             label21.AutoSize = true;
             label21.BackColor = SystemColors.InfoText;
             label21.ForeColor = SystemColors.ButtonHighlight;
-            label21.Location = new Point(700, 125);
+            label21.Location = new Point(639, 122);
             label21.Name = "label21";
-            label21.Size = new Size(19, 15);
+            label21.Size = new Size(0, 15);
             label21.TabIndex = 74;
-            label21.Text = "36";
             // 
             // label22
             // 
             label22.AutoSize = true;
             label22.BackColor = SystemColors.InfoText;
             label22.ForeColor = SystemColors.ButtonHighlight;
-            label22.Location = new Point(681, 125);
+            label22.Location = new Point(620, 122);
             label22.Name = "label22";
-            label22.Size = new Size(19, 15);
+            label22.Size = new Size(0, 15);
             label22.TabIndex = 75;
-            label22.Text = "28";
             // 
             // label23
             // 
             label23.AutoSize = true;
             label23.BackColor = SystemColors.InfoText;
             label23.ForeColor = SystemColors.ButtonHighlight;
-            label23.Location = new Point(662, 125);
+            label23.Location = new Point(601, 122);
             label23.Name = "label23";
             label23.Size = new Size(19, 15);
             label23.TabIndex = 76;
@@ -912,7 +920,7 @@ namespace abp
             label24.AutoSize = true;
             label24.BackColor = SystemColors.InfoText;
             label24.ForeColor = SystemColors.ButtonHighlight;
-            label24.Location = new Point(643, 125);
+            label24.Location = new Point(582, 122);
             label24.Name = "label24";
             label24.Size = new Size(19, 15);
             label24.TabIndex = 77;
@@ -923,7 +931,7 @@ namespace abp
             label25.AutoSize = true;
             label25.BackColor = SystemColors.InfoText;
             label25.ForeColor = SystemColors.ButtonHighlight;
-            label25.Location = new Point(624, 125);
+            label25.Location = new Point(563, 122);
             label25.Name = "label25";
             label25.Size = new Size(19, 15);
             label25.TabIndex = 78;
@@ -934,7 +942,7 @@ namespace abp
             label26.AutoSize = true;
             label26.BackColor = SystemColors.InfoText;
             label26.ForeColor = SystemColors.ButtonHighlight;
-            label26.Location = new Point(605, 125);
+            label26.Location = new Point(544, 122);
             label26.Name = "label26";
             label26.Size = new Size(13, 15);
             label26.TabIndex = 79;
@@ -945,7 +953,7 @@ namespace abp
             label27.AutoSize = true;
             label27.BackColor = SystemColors.InfoText;
             label27.ForeColor = SystemColors.ButtonHighlight;
-            label27.Location = new Point(586, 125);
+            label27.Location = new Point(525, 122);
             label27.Name = "label27";
             label27.Size = new Size(13, 15);
             label27.TabIndex = 80;
@@ -956,7 +964,7 @@ namespace abp
             label28.AutoSize = true;
             label28.BackColor = SystemColors.InfoText;
             label28.ForeColor = SystemColors.ButtonHighlight;
-            label28.Location = new Point(567, 125);
+            label28.Location = new Point(506, 122);
             label28.Name = "label28";
             label28.Size = new Size(13, 15);
             label28.TabIndex = 81;
@@ -967,7 +975,7 @@ namespace abp
             label29.AutoSize = true;
             label29.BackColor = SystemColors.InfoText;
             label29.ForeColor = SystemColors.ButtonHighlight;
-            label29.Location = new Point(548, 125);
+            label29.Location = new Point(487, 122);
             label29.Name = "label29";
             label29.Size = new Size(0, 15);
             label29.TabIndex = 82;
@@ -977,7 +985,7 @@ namespace abp
             label30.AutoSize = true;
             label30.BackColor = SystemColors.InfoText;
             label30.ForeColor = SystemColors.ButtonHighlight;
-            label30.Location = new Point(548, 155);
+            label30.Location = new Point(487, 152);
             label30.Name = "label30";
             label30.Size = new Size(13, 15);
             label30.TabIndex = 92;
@@ -988,7 +996,7 @@ namespace abp
             label31.AutoSize = true;
             label31.BackColor = SystemColors.InfoText;
             label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(567, 155);
+            label31.Location = new Point(506, 152);
             label31.Name = "label31";
             label31.Size = new Size(13, 15);
             label31.TabIndex = 91;
@@ -999,7 +1007,7 @@ namespace abp
             label32.AutoSize = true;
             label32.BackColor = SystemColors.InfoText;
             label32.ForeColor = SystemColors.ButtonHighlight;
-            label32.Location = new Point(586, 155);
+            label32.Location = new Point(525, 152);
             label32.Name = "label32";
             label32.Size = new Size(13, 15);
             label32.TabIndex = 90;
@@ -1010,7 +1018,7 @@ namespace abp
             label33.AutoSize = true;
             label33.BackColor = SystemColors.InfoText;
             label33.ForeColor = SystemColors.ButtonHighlight;
-            label33.Location = new Point(605, 155);
+            label33.Location = new Point(544, 152);
             label33.Name = "label33";
             label33.Size = new Size(13, 15);
             label33.TabIndex = 89;
@@ -1021,7 +1029,7 @@ namespace abp
             label34.AutoSize = true;
             label34.BackColor = SystemColors.InfoText;
             label34.ForeColor = SystemColors.ButtonHighlight;
-            label34.Location = new Point(624, 155);
+            label34.Location = new Point(563, 152);
             label34.Name = "label34";
             label34.Size = new Size(13, 15);
             label34.TabIndex = 88;
@@ -1032,7 +1040,7 @@ namespace abp
             label35.AutoSize = true;
             label35.BackColor = SystemColors.InfoText;
             label35.ForeColor = SystemColors.ButtonHighlight;
-            label35.Location = new Point(643, 155);
+            label35.Location = new Point(582, 152);
             label35.Name = "label35";
             label35.Size = new Size(13, 15);
             label35.TabIndex = 87;
@@ -1043,7 +1051,7 @@ namespace abp
             label36.AutoSize = true;
             label36.BackColor = SystemColors.InfoText;
             label36.ForeColor = SystemColors.ButtonHighlight;
-            label36.Location = new Point(662, 155);
+            label36.Location = new Point(601, 152);
             label36.Name = "label36";
             label36.Size = new Size(13, 15);
             label36.TabIndex = 86;
@@ -1054,29 +1062,27 @@ namespace abp
             label37.AutoSize = true;
             label37.BackColor = SystemColors.InfoText;
             label37.ForeColor = SystemColors.ButtonHighlight;
-            label37.Location = new Point(681, 155);
+            label37.Location = new Point(620, 152);
             label37.Name = "label37";
-            label37.Size = new Size(13, 15);
+            label37.Size = new Size(0, 15);
             label37.TabIndex = 85;
-            label37.Text = "0";
             // 
             // label38
             // 
             label38.AutoSize = true;
             label38.BackColor = SystemColors.InfoText;
             label38.ForeColor = SystemColors.ButtonHighlight;
-            label38.Location = new Point(700, 155);
+            label38.Location = new Point(639, 152);
             label38.Name = "label38";
-            label38.Size = new Size(13, 15);
+            label38.Size = new Size(0, 15);
             label38.TabIndex = 84;
-            label38.Text = "0";
             // 
             // label39
             // 
             label39.AutoSize = true;
             label39.BackColor = SystemColors.InfoText;
             label39.ForeColor = SystemColors.ButtonHighlight;
-            label39.Location = new Point(529, 155);
+            label39.Location = new Point(468, 152);
             label39.Name = "label39";
             label39.Size = new Size(13, 15);
             label39.TabIndex = 83;
@@ -1087,7 +1093,7 @@ namespace abp
             label40.AutoSize = true;
             label40.BackColor = SystemColors.InfoText;
             label40.ForeColor = SystemColors.ButtonHighlight;
-            label40.Location = new Point(548, 140);
+            label40.Location = new Point(487, 137);
             label40.Name = "label40";
             label40.Size = new Size(13, 15);
             label40.TabIndex = 102;
@@ -1098,7 +1104,7 @@ namespace abp
             label41.AutoSize = true;
             label41.BackColor = SystemColors.InfoText;
             label41.ForeColor = SystemColors.ButtonHighlight;
-            label41.Location = new Point(567, 140);
+            label41.Location = new Point(506, 137);
             label41.Name = "label41";
             label41.Size = new Size(13, 15);
             label41.TabIndex = 101;
@@ -1109,7 +1115,7 @@ namespace abp
             label42.AutoSize = true;
             label42.BackColor = SystemColors.InfoText;
             label42.ForeColor = SystemColors.ButtonHighlight;
-            label42.Location = new Point(586, 140);
+            label42.Location = new Point(525, 137);
             label42.Name = "label42";
             label42.Size = new Size(13, 15);
             label42.TabIndex = 100;
@@ -1120,7 +1126,7 @@ namespace abp
             label43.AutoSize = true;
             label43.BackColor = SystemColors.InfoText;
             label43.ForeColor = SystemColors.ButtonHighlight;
-            label43.Location = new Point(605, 140);
+            label43.Location = new Point(544, 137);
             label43.Name = "label43";
             label43.Size = new Size(13, 15);
             label43.TabIndex = 99;
@@ -1131,7 +1137,7 @@ namespace abp
             label44.AutoSize = true;
             label44.BackColor = SystemColors.InfoText;
             label44.ForeColor = SystemColors.ButtonHighlight;
-            label44.Location = new Point(624, 140);
+            label44.Location = new Point(563, 137);
             label44.Name = "label44";
             label44.Size = new Size(13, 15);
             label44.TabIndex = 98;
@@ -1142,7 +1148,7 @@ namespace abp
             label45.AutoSize = true;
             label45.BackColor = SystemColors.InfoText;
             label45.ForeColor = SystemColors.ButtonHighlight;
-            label45.Location = new Point(643, 140);
+            label45.Location = new Point(582, 137);
             label45.Name = "label45";
             label45.Size = new Size(13, 15);
             label45.TabIndex = 97;
@@ -1153,7 +1159,7 @@ namespace abp
             label46.AutoSize = true;
             label46.BackColor = SystemColors.InfoText;
             label46.ForeColor = SystemColors.ButtonHighlight;
-            label46.Location = new Point(662, 140);
+            label46.Location = new Point(601, 137);
             label46.Name = "label46";
             label46.Size = new Size(13, 15);
             label46.TabIndex = 96;
@@ -1164,29 +1170,27 @@ namespace abp
             label47.AutoSize = true;
             label47.BackColor = SystemColors.InfoText;
             label47.ForeColor = SystemColors.ButtonHighlight;
-            label47.Location = new Point(681, 140);
+            label47.Location = new Point(620, 137);
             label47.Name = "label47";
-            label47.Size = new Size(13, 15);
+            label47.Size = new Size(0, 15);
             label47.TabIndex = 95;
-            label47.Text = "8";
             // 
             // label48
             // 
             label48.AutoSize = true;
             label48.BackColor = SystemColors.InfoText;
             label48.ForeColor = SystemColors.ButtonHighlight;
-            label48.Location = new Point(700, 140);
+            label48.Location = new Point(639, 137);
             label48.Name = "label48";
-            label48.Size = new Size(13, 15);
+            label48.Size = new Size(0, 15);
             label48.TabIndex = 94;
-            label48.Text = "9";
             // 
             // label49
             // 
             label49.AutoSize = true;
             label49.BackColor = SystemColors.InfoText;
             label49.ForeColor = SystemColors.ButtonHighlight;
-            label49.Location = new Point(529, 140);
+            label49.Location = new Point(468, 137);
             label49.Name = "label49";
             label49.Size = new Size(13, 15);
             label49.TabIndex = 93;
@@ -1197,7 +1201,7 @@ namespace abp
             label50.AutoSize = true;
             label50.BackColor = SystemColors.InfoText;
             label50.ForeColor = SystemColors.ButtonHighlight;
-            label50.Location = new Point(548, 170);
+            label50.Location = new Point(487, 167);
             label50.Name = "label50";
             label50.Size = new Size(0, 15);
             label50.TabIndex = 112;
@@ -1207,7 +1211,7 @@ namespace abp
             label51.AutoSize = true;
             label51.BackColor = SystemColors.InfoText;
             label51.ForeColor = SystemColors.ButtonHighlight;
-            label51.Location = new Point(567, 170);
+            label51.Location = new Point(506, 167);
             label51.Name = "label51";
             label51.Size = new Size(0, 15);
             label51.TabIndex = 111;
@@ -1217,7 +1221,7 @@ namespace abp
             label52.AutoSize = true;
             label52.BackColor = SystemColors.InfoText;
             label52.ForeColor = SystemColors.ButtonHighlight;
-            label52.Location = new Point(586, 170);
+            label52.Location = new Point(525, 167);
             label52.Name = "label52";
             label52.Size = new Size(0, 15);
             label52.TabIndex = 110;
@@ -1227,7 +1231,7 @@ namespace abp
             label53.AutoSize = true;
             label53.BackColor = SystemColors.InfoText;
             label53.ForeColor = SystemColors.ButtonHighlight;
-            label53.Location = new Point(605, 170);
+            label53.Location = new Point(544, 167);
             label53.Name = "label53";
             label53.Size = new Size(0, 15);
             label53.TabIndex = 109;
@@ -1237,7 +1241,7 @@ namespace abp
             label54.AutoSize = true;
             label54.BackColor = SystemColors.InfoText;
             label54.ForeColor = SystemColors.ButtonHighlight;
-            label54.Location = new Point(624, 170);
+            label54.Location = new Point(563, 167);
             label54.Name = "label54";
             label54.Size = new Size(13, 15);
             label54.TabIndex = 108;
@@ -1248,7 +1252,7 @@ namespace abp
             label55.AutoSize = true;
             label55.BackColor = SystemColors.InfoText;
             label55.ForeColor = SystemColors.ButtonHighlight;
-            label55.Location = new Point(643, 170);
+            label55.Location = new Point(582, 167);
             label55.Name = "label55";
             label55.Size = new Size(13, 15);
             label55.TabIndex = 107;
@@ -1259,7 +1263,7 @@ namespace abp
             label56.AutoSize = true;
             label56.BackColor = SystemColors.InfoText;
             label56.ForeColor = SystemColors.ButtonHighlight;
-            label56.Location = new Point(662, 170);
+            label56.Location = new Point(601, 167);
             label56.Name = "label56";
             label56.Size = new Size(19, 15);
             label56.TabIndex = 106;
@@ -1270,29 +1274,27 @@ namespace abp
             label57.AutoSize = true;
             label57.BackColor = SystemColors.InfoText;
             label57.ForeColor = SystemColors.ButtonHighlight;
-            label57.Location = new Point(681, 170);
+            label57.Location = new Point(620, 167);
             label57.Name = "label57";
-            label57.Size = new Size(19, 15);
+            label57.Size = new Size(0, 15);
             label57.TabIndex = 105;
-            label57.Text = "56";
             // 
             // label58
             // 
             label58.AutoSize = true;
             label58.BackColor = SystemColors.InfoText;
             label58.ForeColor = SystemColors.ButtonHighlight;
-            label58.Location = new Point(700, 170);
+            label58.Location = new Point(639, 167);
             label58.Name = "label58";
-            label58.Size = new Size(25, 15);
+            label58.Size = new Size(0, 15);
             label58.TabIndex = 104;
-            label58.Text = "126";
             // 
             // label59
             // 
             label59.AutoSize = true;
             label59.BackColor = SystemColors.InfoText;
             label59.ForeColor = SystemColors.ButtonHighlight;
-            label59.Location = new Point(529, 170);
+            label59.Location = new Point(468, 167);
             label59.Name = "label59";
             label59.Size = new Size(13, 15);
             label59.TabIndex = 103;
@@ -1303,7 +1305,7 @@ namespace abp
             label60.AutoSize = true;
             label60.BackColor = SystemColors.InfoText;
             label60.ForeColor = SystemColors.ButtonHighlight;
-            label60.Location = new Point(548, 185);
+            label60.Location = new Point(487, 182);
             label60.Name = "label60";
             label60.Size = new Size(0, 15);
             label60.TabIndex = 122;
@@ -1313,7 +1315,7 @@ namespace abp
             label61.AutoSize = true;
             label61.BackColor = SystemColors.InfoText;
             label61.ForeColor = SystemColors.ButtonHighlight;
-            label61.Location = new Point(567, 185);
+            label61.Location = new Point(506, 182);
             label61.Name = "label61";
             label61.Size = new Size(0, 15);
             label61.TabIndex = 121;
@@ -1323,7 +1325,7 @@ namespace abp
             label62.AutoSize = true;
             label62.BackColor = SystemColors.InfoText;
             label62.ForeColor = SystemColors.ButtonHighlight;
-            label62.Location = new Point(586, 185);
+            label62.Location = new Point(525, 182);
             label62.Name = "label62";
             label62.Size = new Size(0, 15);
             label62.TabIndex = 120;
@@ -1333,7 +1335,7 @@ namespace abp
             label63.AutoSize = true;
             label63.BackColor = SystemColors.InfoText;
             label63.ForeColor = SystemColors.ButtonHighlight;
-            label63.Location = new Point(605, 185);
+            label63.Location = new Point(544, 182);
             label63.Name = "label63";
             label63.Size = new Size(13, 15);
             label63.TabIndex = 119;
@@ -1344,7 +1346,7 @@ namespace abp
             label64.AutoSize = true;
             label64.BackColor = SystemColors.InfoText;
             label64.ForeColor = SystemColors.ButtonHighlight;
-            label64.Location = new Point(624, 185);
+            label64.Location = new Point(563, 182);
             label64.Name = "label64";
             label64.Size = new Size(13, 15);
             label64.TabIndex = 118;
@@ -1355,7 +1357,7 @@ namespace abp
             label65.AutoSize = true;
             label65.BackColor = SystemColors.InfoText;
             label65.ForeColor = SystemColors.ButtonHighlight;
-            label65.Location = new Point(643, 185);
+            label65.Location = new Point(582, 182);
             label65.Name = "label65";
             label65.Size = new Size(19, 15);
             label65.TabIndex = 117;
@@ -1366,7 +1368,7 @@ namespace abp
             label66.AutoSize = true;
             label66.BackColor = SystemColors.InfoText;
             label66.ForeColor = SystemColors.ButtonHighlight;
-            label66.Location = new Point(662, 185);
+            label66.Location = new Point(601, 182);
             label66.Name = "label66";
             label66.Size = new Size(19, 15);
             label66.TabIndex = 116;
@@ -1377,29 +1379,27 @@ namespace abp
             label67.AutoSize = true;
             label67.BackColor = SystemColors.InfoText;
             label67.ForeColor = SystemColors.ButtonHighlight;
-            label67.Location = new Point(681, 185);
+            label67.Location = new Point(620, 182);
             label67.Name = "label67";
-            label67.Size = new Size(19, 15);
+            label67.Size = new Size(0, 15);
             label67.TabIndex = 115;
-            label67.Text = "70";
             // 
             // label68
             // 
             label68.AutoSize = true;
             label68.BackColor = SystemColors.InfoText;
             label68.ForeColor = SystemColors.ButtonHighlight;
-            label68.Location = new Point(700, 185);
+            label68.Location = new Point(639, 182);
             label68.Name = "label68";
-            label68.Size = new Size(25, 15);
+            label68.Size = new Size(0, 15);
             label68.TabIndex = 114;
-            label68.Text = "126";
             // 
             // label69
             // 
             label69.AutoSize = true;
             label69.BackColor = SystemColors.InfoText;
             label69.ForeColor = SystemColors.ButtonHighlight;
-            label69.Location = new Point(529, 185);
+            label69.Location = new Point(468, 182);
             label69.Name = "label69";
             label69.Size = new Size(13, 15);
             label69.TabIndex = 113;
@@ -1410,7 +1410,7 @@ namespace abp
             label70.AutoSize = true;
             label70.BackColor = SystemColors.InfoText;
             label70.ForeColor = SystemColors.ButtonHighlight;
-            label70.Location = new Point(548, 200);
+            label70.Location = new Point(487, 197);
             label70.Name = "label70";
             label70.Size = new Size(0, 15);
             label70.TabIndex = 132;
@@ -1420,7 +1420,7 @@ namespace abp
             label71.AutoSize = true;
             label71.BackColor = SystemColors.InfoText;
             label71.ForeColor = SystemColors.ButtonHighlight;
-            label71.Location = new Point(567, 200);
+            label71.Location = new Point(506, 197);
             label71.Name = "label71";
             label71.Size = new Size(0, 15);
             label71.TabIndex = 131;
@@ -1430,7 +1430,7 @@ namespace abp
             label72.AutoSize = true;
             label72.BackColor = SystemColors.InfoText;
             label72.ForeColor = SystemColors.ButtonHighlight;
-            label72.Location = new Point(586, 200);
+            label72.Location = new Point(525, 197);
             label72.Name = "label72";
             label72.Size = new Size(13, 15);
             label72.TabIndex = 130;
@@ -1441,7 +1441,7 @@ namespace abp
             label73.AutoSize = true;
             label73.BackColor = SystemColors.InfoText;
             label73.ForeColor = SystemColors.ButtonHighlight;
-            label73.Location = new Point(605, 200);
+            label73.Location = new Point(544, 197);
             label73.Name = "label73";
             label73.Size = new Size(13, 15);
             label73.TabIndex = 129;
@@ -1452,7 +1452,7 @@ namespace abp
             label74.AutoSize = true;
             label74.BackColor = SystemColors.InfoText;
             label74.ForeColor = SystemColors.ButtonHighlight;
-            label74.Location = new Point(624, 200);
+            label74.Location = new Point(563, 197);
             label74.Name = "label74";
             label74.Size = new Size(19, 15);
             label74.TabIndex = 128;
@@ -1463,7 +1463,7 @@ namespace abp
             label75.AutoSize = true;
             label75.BackColor = SystemColors.InfoText;
             label75.ForeColor = SystemColors.ButtonHighlight;
-            label75.Location = new Point(643, 200);
+            label75.Location = new Point(582, 197);
             label75.Name = "label75";
             label75.Size = new Size(19, 15);
             label75.TabIndex = 127;
@@ -1474,7 +1474,7 @@ namespace abp
             label76.AutoSize = true;
             label76.BackColor = SystemColors.InfoText;
             label76.ForeColor = SystemColors.ButtonHighlight;
-            label76.Location = new Point(662, 200);
+            label76.Location = new Point(601, 197);
             label76.Name = "label76";
             label76.Size = new Size(19, 15);
             label76.TabIndex = 126;
@@ -1485,29 +1485,27 @@ namespace abp
             label77.AutoSize = true;
             label77.BackColor = SystemColors.InfoText;
             label77.ForeColor = SystemColors.ButtonHighlight;
-            label77.Location = new Point(681, 200);
+            label77.Location = new Point(620, 197);
             label77.Name = "label77";
-            label77.Size = new Size(19, 15);
+            label77.Size = new Size(0, 15);
             label77.TabIndex = 125;
-            label77.Text = "56";
             // 
             // label78
             // 
             label78.AutoSize = true;
             label78.BackColor = SystemColors.InfoText;
             label78.ForeColor = SystemColors.ButtonHighlight;
-            label78.Location = new Point(700, 200);
+            label78.Location = new Point(639, 197);
             label78.Name = "label78";
-            label78.Size = new Size(19, 15);
+            label78.Size = new Size(0, 15);
             label78.TabIndex = 124;
-            label78.Text = "84";
             // 
             // label79
             // 
             label79.AutoSize = true;
             label79.BackColor = SystemColors.InfoText;
             label79.ForeColor = SystemColors.ButtonHighlight;
-            label79.Location = new Point(529, 200);
+            label79.Location = new Point(468, 197);
             label79.Name = "label79";
             label79.Size = new Size(13, 15);
             label79.TabIndex = 123;
@@ -1516,65 +1514,58 @@ namespace abp
             // label80
             // 
             label80.AutoSize = true;
-            label80.Location = new Point(492, 200);
+            label80.Location = new Point(431, 197);
             label80.Name = "label80";
-            label80.Size = new Size(13, 15);
+            label80.Size = new Size(0, 15);
             label80.TabIndex = 138;
-            label80.Text = "6";
             // 
             // label81
             // 
             label81.AutoSize = true;
-            label81.Location = new Point(492, 185);
+            label81.Location = new Point(431, 182);
             label81.Name = "label81";
-            label81.Size = new Size(13, 15);
+            label81.Size = new Size(0, 15);
             label81.TabIndex = 137;
-            label81.Text = "5";
             // 
             // label82
             // 
             label82.AutoSize = true;
-            label82.Location = new Point(492, 170);
+            label82.Location = new Point(431, 167);
             label82.Name = "label82";
-            label82.Size = new Size(13, 15);
+            label82.Size = new Size(0, 15);
             label82.TabIndex = 136;
-            label82.Text = "4";
             // 
             // label83
             // 
             label83.AutoSize = true;
-            label83.Location = new Point(492, 140);
+            label83.Location = new Point(431, 137);
             label83.Name = "label83";
-            label83.Size = new Size(13, 15);
+            label83.Size = new Size(0, 15);
             label83.TabIndex = 135;
-            label83.Text = "2";
             // 
             // label84
             // 
             label84.AutoSize = true;
-            label84.Location = new Point(492, 155);
+            label84.Location = new Point(431, 152);
             label84.Name = "label84";
-            label84.Size = new Size(13, 15);
+            label84.Size = new Size(0, 15);
             label84.TabIndex = 134;
-            label84.Text = "3";
             // 
             // label85
             // 
             label85.AutoSize = true;
-            label85.Location = new Point(492, 125);
+            label85.Location = new Point(412, 137);
             label85.Name = "label85";
-            label85.Size = new Size(13, 15);
+            label85.Size = new Size(0, 15);
             label85.TabIndex = 133;
-            label85.Text = "1";
             // 
             // label86
             // 
             label86.AutoSize = true;
             label86.Location = new Point(450, 301);
             label86.Name = "label86";
-            label86.Size = new Size(713, 15);
+            label86.Size = new Size(0, 15);
             label86.TabIndex = 139;
-            label86.Text = "SONUÇ = (((TABLO DEĞER 1+TABLO DEĞER 2 +- BEYAZ1)*+-YEŞİL KISIM + SAR1+SARI2)+BEYAZ 2 + MAVİ + KIRMIZI * +- SİYAH)*MOR";
             // 
             // sonucSutunA
             // 
@@ -1631,7 +1622,7 @@ namespace abp
             // 
             // listViewForA
             // 
-            listViewForA.Location = new Point(525, 36);
+            listViewForA.Location = new Point(464, 33);
             listViewForA.Name = "listViewForA";
             listViewForA.Size = new Size(156, 231);
             listViewForA.TabIndex = 147;
@@ -1689,9 +1680,9 @@ namespace abp
             // 
             // listViewForB
             // 
-            listViewForB.Location = new Point(744, 36);
+            listViewForB.Location = new Point(641, 33);
             listViewForB.Name = "listViewForB";
-            listViewForB.Size = new Size(144, 231);
+            listViewForB.Size = new Size(154, 231);
             listViewForB.TabIndex = 153;
             listViewForB.UseCompatibleStateImageBehavior = false;
             // 
@@ -1700,31 +1691,28 @@ namespace abp
             label87.AutoSize = true;
             label87.Location = new Point(450, 342);
             label87.Name = "label87";
-            label87.Size = new Size(702, 15);
+            label87.Size = new Size(0, 15);
             label87.TabIndex = 154;
-            label87.Text = "SONUÇ = (((TABLO DEĞER 2-TABLO DEĞER 1 - BEYAZ1)*+-YEŞİL KISIM + SAR1+SARI2)+BEYAZ 2 + MAVİ + KIRMIZI * +- SİYAH)*MOR";
             // 
             // label88
             // 
             label88.AutoSize = true;
             label88.Location = new Point(450, 274);
             label88.Name = "label88";
-            label88.Size = new Size(66, 15);
+            label88.Size = new Size(0, 15);
             label88.TabIndex = 155;
-            label88.Text = "A,C,E,F için";
             // 
             // label89
             // 
             label89.AutoSize = true;
             label89.Location = new Point(450, 327);
             label89.Name = "label89";
-            label89.Size = new Size(62, 15);
+            label89.Size = new Size(0, 15);
             label89.TabIndex = 156;
-            label89.Text = "B ve D için";
             // 
             // listViewForC
             // 
-            listViewForC.Location = new Point(958, 36);
+            listViewForC.Location = new Point(812, 33);
             listViewForC.Name = "listViewForC";
             listViewForC.Size = new Size(163, 231);
             listViewForC.TabIndex = 157;
@@ -1732,7 +1720,7 @@ namespace abp
             // 
             // listViewForD
             // 
-            listViewForD.Location = new Point(525, 367);
+            listViewForD.Location = new Point(458, 364);
             listViewForD.Name = "listViewForD";
             listViewForD.Size = new Size(156, 231);
             listViewForD.TabIndex = 158;
@@ -1740,15 +1728,15 @@ namespace abp
             // 
             // listViewForE
             // 
-            listViewForE.Location = new Point(744, 367);
+            listViewForE.Location = new Point(641, 364);
             listViewForE.Name = "listViewForE";
-            listViewForE.Size = new Size(144, 231);
+            listViewForE.Size = new Size(154, 231);
             listViewForE.TabIndex = 159;
             listViewForE.UseCompatibleStateImageBehavior = false;
             // 
             // listViewForF
             // 
-            listViewForF.Location = new Point(958, 360);
+            listViewForF.Location = new Point(812, 364);
             listViewForF.Name = "listViewForF";
             listViewForF.Size = new Size(163, 231);
             listViewForF.TabIndex = 160;
@@ -1757,7 +1745,7 @@ namespace abp
             // ListA
             // 
             ListA.AutoSize = true;
-            ListA.Location = new Point(525, 18);
+            ListA.Location = new Point(464, 15);
             ListA.Name = "ListA";
             ListA.Size = new Size(36, 15);
             ListA.TabIndex = 161;
@@ -1766,7 +1754,7 @@ namespace abp
             // label90
             // 
             label90.AutoSize = true;
-            label90.Location = new Point(744, 18);
+            label90.Location = new Point(641, 15);
             label90.Name = "label90";
             label90.Size = new Size(35, 15);
             label90.TabIndex = 162;
@@ -1775,7 +1763,7 @@ namespace abp
             // label91
             // 
             label91.AutoSize = true;
-            label91.Location = new Point(958, 18);
+            label91.Location = new Point(812, 15);
             label91.Name = "label91";
             label91.Size = new Size(36, 15);
             label91.TabIndex = 163;
@@ -1784,7 +1772,7 @@ namespace abp
             // label92
             // 
             label92.AutoSize = true;
-            label92.Location = new Point(531, 617);
+            label92.Location = new Point(451, 346);
             label92.Name = "label92";
             label92.Size = new Size(36, 15);
             label92.TabIndex = 164;
@@ -1793,7 +1781,7 @@ namespace abp
             // label93
             // 
             label93.AutoSize = true;
-            label93.Location = new Point(745, 617);
+            label93.Location = new Point(642, 346);
             label93.Name = "label93";
             label93.Size = new Size(34, 15);
             label93.TabIndex = 165;
@@ -1802,7 +1790,7 @@ namespace abp
             // label94
             // 
             label94.AutoSize = true;
-            label94.Location = new Point(960, 617);
+            label94.Location = new Point(812, 342);
             label94.Name = "label94";
             label94.Size = new Size(34, 15);
             label94.TabIndex = 166;
@@ -1820,17 +1808,128 @@ namespace abp
             // 
             // listViewShowAll
             // 
-            listViewShowAll.Location = new Point(1158, 36);
+            listViewShowAll.Location = new Point(990, 33);
             listViewShowAll.Name = "listViewShowAll";
-            listViewShowAll.Size = new Size(321, 555);
+            listViewShowAll.Size = new Size(321, 562);
             listViewShowAll.TabIndex = 168;
             listViewShowAll.UseCompatibleStateImageBehavior = false;
+            
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(464, 271);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(156, 23);
+            textBox1.TabIndex = 170;
+            textBox1.Text = "1 0 0 0 0 0 0 0 0 ";
+            
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(464, 300);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(156, 23);
+            textBox2.TabIndex = 171;
+            textBox2.Text = "3 0 4 10 20 35 56 84";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(458, 637);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(156, 23);
+            textBox3.TabIndex = 172;
+            textBox3.Text = "1 0 0 0 0 0 0 0 0 ";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(458, 609);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(156, 23);
+            textBox4.TabIndex = 173;
+            textBox4.Text = "3 0 4 10 20 35 56 84";
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(639, 271);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(156, 23);
+            textBox9.TabIndex = 179;
+            textBox9.Text = "1 0 2 3 4 5 6 7 8 9";
+            
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(639, 299);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(156, 23);
+            textBox10.TabIndex = 178;
+            textBox10.Text = "0 0 5 15 35 70 126";
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(812, 271);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(156, 23);
+            textBox11.TabIndex = 181;
+            textBox11.Text = "2 0 3 6 10 15 21 28 36";
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(812, 299);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(156, 23);
+            textBox12.TabIndex = 180;
+            textBox12.Text = "8 0 6 21 56 126";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(812, 638);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(156, 23);
+            textBox5.TabIndex = 185;
+            textBox5.Text = "2 0 3 6 10 15 21 28 36";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(812, 609);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(156, 23);
+            textBox6.TabIndex = 184;
+            textBox6.Text = "8 0 6 21 56 126";
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(641, 637);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(156, 23);
+            textBox7.TabIndex = 183;
+            textBox7.Text = "1 0 2 3 4 5 6 7 8 9";
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(642, 609);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(156, 23);
+            textBox8.TabIndex = 182;
+            textBox8.Text = "0 0 5 15 35 70 126";
             // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1491, 672);
+            Controls.Add(textBox5);
+            Controls.Add(textBox6);
+            Controls.Add(textBox7);
+            Controls.Add(textBox8);
+            Controls.Add(textBox11);
+            Controls.Add(textBox12);
+            Controls.Add(textBox9);
+            Controls.Add(textBox10);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(listViewShowAll);
             Controls.Add(button1);
             Controls.Add(label94);
@@ -2003,6 +2102,7 @@ namespace abp
             Controls.Add(A);
             Name = "MainView";
             Text = "Form1";
+            
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2181,5 +2281,17 @@ namespace abp
         private Label label94;
         private Button button1;
         private ListView listViewShowAll;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox9;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private TextBox textBox12;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private TextBox textBox8;
     }
 }

@@ -11,7 +11,7 @@ public partial class MainView : Form
 
     public MainView()
     {
-        InitializeComponent();      
+        InitializeComponent();
         _viewModel = new MainViewModel();
     }
 
@@ -23,14 +23,14 @@ public partial class MainView : Form
         }
     }
 
-    private static void FillListViewWithResults(ListView listview, List<string> result  )
+    private static void FillListViewWithResults(ListView listview, List<string> result)
     {
         foreach (string item in result)
         {
             listview.Items.Add(item);
         }
 
-        
+
     }
     private static void FillListViewWithItems(ListView listview, List<string> listItems)
     {
@@ -45,7 +45,7 @@ public partial class MainView : Form
     private void ButtonA_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxA1, textBoxA2, textBoxA3, textBoxA4, textBoxA5, textBoxA6, textBoxA7, textBoxA8, textBoxA9];
-        
+
 
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
@@ -53,10 +53,10 @@ public partial class MainView : Form
         var result = _viewModel.ExecuteColumn(Columns.A, values);
 
         listViewForA.Items.Clear();
-        FillListViewWithResults(listViewForA, result );
+        FillListViewWithResults(listViewForA, result);
 
 
-       // List<string> listItemsA = new List<string>();
+        // List<string> listItemsA = new List<string>();
 
         //foreach (ListViewItem item in listViewForA.Items)
         //{
@@ -65,21 +65,21 @@ public partial class MainView : Form
         //List<ListViewItem> viewItemsA = new List<ListViewItem>();
         //viewItemsA.AddRange(listViewForA.Items.OfType<ListViewItem>());
 
-        
+
 
     }
 
-   
+
 
     private void ButtonB_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxB1, textBoxB2, textBoxB3, textBoxB4, textBoxB5, textBoxB6, textBoxB7, textBoxB8, textBoxB9];
-        
+
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.B, values);
-        
+
         listViewForB.Items.Clear();
         FillListViewWithResults(listViewForB, result);
     }
@@ -87,7 +87,7 @@ public partial class MainView : Form
     private void ButtonC_Click(object sender, EventArgs e)
     {
         TextBox[] textBoxes = [textBoxC1, textBoxC2, textBoxC3, textBoxC4, textBoxC5, textBoxC6, textBoxC7, textBoxC8, textBoxC9];
-        
+
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
@@ -95,7 +95,7 @@ public partial class MainView : Form
 
         listViewForC.Items.Clear();
         FillListViewWithResults(listViewForC, result);
-       
+
     }
 
     private void ButtonD_Click(object sender, EventArgs e)
@@ -106,7 +106,7 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.D, values);
-        
+
         listViewForD.Items.Clear();
         FillListViewWithResults(listViewForD, result);
     }
@@ -119,9 +119,9 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.E, values);
-        
+
         listViewForE.Items.Clear();
-        FillListViewWithResults(listViewForE, result);    
+        FillListViewWithResults(listViewForE, result);
     }
 
     private void ButtonF_Click(object sender, EventArgs e)
@@ -132,9 +132,21 @@ public partial class MainView : Form
             return;
 
         var result = _viewModel.ExecuteColumn(Columns.F, values);
-       
+
         listViewForF.Items.Clear();
-        FillListViewWithResults(listViewForF, result);          
+        FillListViewWithResults(listViewForF, result);
+    }
+    private bool AreAllItemsUnique(params string[] items)
+    {
+        HashSet<string> uniqueItems = new HashSet<string>();
+        foreach (string item in items)
+        {
+            if (!uniqueItems.Add(item))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private void ButtonExecuteAll_Click(object sender, EventArgs e)
@@ -146,39 +158,45 @@ public partial class MainView : Form
         ButtonE_Click(sender, e);
         ButtonF_Click(sender, e);
 
-        
 
         List<string> listItemsA = new List<string>();
         foreach (ListViewItem item in listViewForA.Items)
         {
             listItemsA.Add(item.ToString());
         }
+
         List<string> listItemsB = new List<string>();
         foreach (ListViewItem item in listViewForB.Items)
         {
             listItemsB.Add(item.ToString());
         }
+
         List<string> listItemsC = new List<string>();
         foreach (ListViewItem item in listViewForC.Items)
         {
             listItemsC.Add(item.ToString());
         }
+
         List<string> listItemsD = new List<string>();
         foreach (ListViewItem item in listViewForD.Items)
         {
             listItemsD.Add(item.ToString());
         }
+
         List<string> listItemsE = new List<string>();
         foreach (ListViewItem item in listViewForE.Items)
         {
             listItemsE.Add(item.ToString());
         }
+
         List<string> listItemsF = new List<string>();
         foreach (ListViewItem item in listViewForF.Items)
         {
             listItemsF.Add(item.ToString());
         }
-        List<string> result = [];
+
+        List<string> result = new List<string>();
+
         foreach (string itemA in listItemsA)
         {
             foreach (string itemB in listItemsB)
@@ -191,8 +209,11 @@ public partial class MainView : Form
                         {
                             foreach (string itemF in listItemsF)
                             {
-                                
-                                result.Add($"{itemA}, {itemB}, {itemC}, {itemD}, {itemE}, {itemF}");
+                                // Check if all items in the combination are unique
+                                if (AreAllItemsUnique(itemA, itemB, itemC, itemD, itemE, itemF))
+                                {
+                                    result.Add($"{itemA}, {itemB}, {itemC}, {itemD}, {itemE}, {itemF}");
+                                }
                             }
                         }
                     }
@@ -202,5 +223,17 @@ public partial class MainView : Form
 
         FillListViewWithResults(listViewShowAll, result);
 
+        // Helper method to check if a combination is unique
+
+
+
+
+
     }
+
+    
+
+    
+
+   
 }
