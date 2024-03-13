@@ -46,27 +46,34 @@ public partial class MainView : Form
     {
         TextBox[] textBoxes = [textBoxA1, textBoxA2, textBoxA3, textBoxA4, textBoxA5, textBoxA6, textBoxA7, textBoxA8, textBoxA9];
 
+        
+        
 
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
+
+        //if ( textBoxAResult1 == null && textBoxAResult2 == null)
+        //{
+        //    return;
+        //}
+        //else if ( textBoxAResult1 != null && textBoxAResult2 == null) 
+        //{
+        //    textBoxAResult2 = secondTableIndex;
+        //}
+        //else if( textBoxAResult1 == null && textBoxAResult2 != null ) 
+        //{
+
+        //}
+        //else if (textBoxAResult1 != null && textBoxAResult2 != null)
+        //{
+
+        //}
+
 
         var result = _viewModel.ExecuteColumn(Columns.A, values);
 
         listViewForA.Items.Clear();
         FillListViewWithResults(listViewForA, result);
-
-
-        // List<string> listItemsA = new List<string>();
-
-        //foreach (ListViewItem item in listViewForA.Items)
-        //{
-        //    listItemsA.Add(item.ToString());
-        //}
-        //List<ListViewItem> viewItemsA = new List<ListViewItem>();
-        //viewItemsA.AddRange(listViewForA.Items.OfType<ListViewItem>());
-
-
-
     }
 
 

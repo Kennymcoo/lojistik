@@ -170,12 +170,12 @@ namespace abp
             label84 = new Label();
             label85 = new Label();
             label86 = new Label();
-            sonucSutunA = new TextBox();
-            sonucSutunB = new TextBox();
-            sonucSutunC = new TextBox();
-            sonucSutunD = new TextBox();
-            sonucSutunE = new TextBox();
-            sonucSutunF = new TextBox();
+            textBoxAResult1 = new TextBox();
+            textBoxBResult1 = new TextBox();
+            textBoxCResult1 = new TextBox();
+            textBoxDResult1 = new TextBox();
+            textBoxEResult1 = new TextBox();
+            textBoxFResult1 = new TextBox();
             buttonExecute = new Button();
             listViewForA = new ListView();
             buttonB = new Button();
@@ -211,6 +211,12 @@ namespace abp
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             textBox8 = new TextBox();
+            textBoxAResult2 = new TextBox();
+            textBoxBResult2 = new TextBox();
+            textBoxCResult2 = new TextBox();
+            textBoxDResult2 = new TextBox();
+            textBoxEResult2 = new TextBox();
+            textBoxFResult2 = new TextBox();
             SuspendLayout();
             // 
             // A
@@ -1567,47 +1573,47 @@ namespace abp
             label86.Size = new Size(0, 15);
             label86.TabIndex = 139;
             // 
-            // sonucSutunA
+            // textBoxAResult1
             // 
-            sonucSutunA.Location = new Point(51, 575);
-            sonucSutunA.Name = "sonucSutunA";
-            sonucSutunA.Size = new Size(49, 23);
-            sonucSutunA.TabIndex = 140;
+            textBoxAResult1.Location = new Point(51, 575);
+            textBoxAResult1.Name = "textBoxAResult1";
+            textBoxAResult1.Size = new Size(49, 23);
+            textBoxAResult1.TabIndex = 140;
             // 
-            // sonucSutunB
+            // textBoxBResult1
             // 
-            sonucSutunB.Location = new Point(116, 575);
-            sonucSutunB.Name = "sonucSutunB";
-            sonucSutunB.Size = new Size(49, 23);
-            sonucSutunB.TabIndex = 141;
+            textBoxBResult1.Location = new Point(116, 575);
+            textBoxBResult1.Name = "textBoxBResult1";
+            textBoxBResult1.Size = new Size(49, 23);
+            textBoxBResult1.TabIndex = 141;
             // 
-            // sonucSutunC
+            // textBoxCResult1
             // 
-            sonucSutunC.Location = new Point(177, 575);
-            sonucSutunC.Name = "sonucSutunC";
-            sonucSutunC.Size = new Size(49, 23);
-            sonucSutunC.TabIndex = 142;
+            textBoxCResult1.Location = new Point(177, 575);
+            textBoxCResult1.Name = "textBoxCResult1";
+            textBoxCResult1.Size = new Size(49, 23);
+            textBoxCResult1.TabIndex = 142;
             // 
-            // sonucSutunD
+            // textBoxDResult1
             // 
-            sonucSutunD.Location = new Point(242, 575);
-            sonucSutunD.Name = "sonucSutunD";
-            sonucSutunD.Size = new Size(49, 23);
-            sonucSutunD.TabIndex = 143;
+            textBoxDResult1.Location = new Point(242, 575);
+            textBoxDResult1.Name = "textBoxDResult1";
+            textBoxDResult1.Size = new Size(49, 23);
+            textBoxDResult1.TabIndex = 143;
             // 
-            // sonucSutunE
+            // textBoxEResult1
             // 
-            sonucSutunE.Location = new Point(306, 575);
-            sonucSutunE.Name = "sonucSutunE";
-            sonucSutunE.Size = new Size(49, 23);
-            sonucSutunE.TabIndex = 144;
+            textBoxEResult1.Location = new Point(306, 575);
+            textBoxEResult1.Name = "textBoxEResult1";
+            textBoxEResult1.Size = new Size(49, 23);
+            textBoxEResult1.TabIndex = 144;
             // 
-            // sonucSutunF
+            // textBoxFResult1
             // 
-            sonucSutunF.Location = new Point(372, 575);
-            sonucSutunF.Name = "sonucSutunF";
-            sonucSutunF.Size = new Size(49, 23);
-            sonucSutunF.TabIndex = 145;
+            textBoxFResult1.Location = new Point(372, 575);
+            textBoxFResult1.Name = "textBoxFResult1";
+            textBoxFResult1.Size = new Size(49, 23);
+            textBoxFResult1.TabIndex = 145;
             // 
             // buttonExecute
             // 
@@ -1813,7 +1819,6 @@ namespace abp
             listViewShowAll.Size = new Size(321, 562);
             listViewShowAll.TabIndex = 168;
             listViewShowAll.UseCompatibleStateImageBehavior = false;
-            
             // 
             // textBox1
             // 
@@ -1822,7 +1827,6 @@ namespace abp
             textBox1.Size = new Size(156, 23);
             textBox1.TabIndex = 170;
             textBox1.Text = "1 0 0 0 0 0 0 0 0 ";
-            
             // 
             // textBox2
             // 
@@ -1855,7 +1859,6 @@ namespace abp
             textBox9.Size = new Size(156, 23);
             textBox9.TabIndex = 179;
             textBox9.Text = "1 0 2 3 4 5 6 7 8 9";
-            
             // 
             // textBox10
             // 
@@ -1913,11 +1916,59 @@ namespace abp
             textBox8.TabIndex = 182;
             textBox8.Text = "0 0 5 15 35 70 126";
             // 
+            // textBoxAResult2
+            // 
+            textBoxAResult2.Location = new Point(51, 546);
+            textBoxAResult2.Name = "textBoxAResult2";
+            textBoxAResult2.Size = new Size(49, 23);
+            textBoxAResult2.TabIndex = 186;
+            // 
+            // textBoxBResult2
+            // 
+            textBoxBResult2.Location = new Point(115, 546);
+            textBoxBResult2.Name = "textBoxBResult2";
+            textBoxBResult2.Size = new Size(50, 23);
+            textBoxBResult2.TabIndex = 187;
+            // 
+            // textBoxCResult2
+            // 
+            textBoxCResult2.Location = new Point(177, 546);
+            textBoxCResult2.Name = "textBoxCResult2";
+            textBoxCResult2.Size = new Size(49, 23);
+            textBoxCResult2.TabIndex = 188;
+            // 
+            // textBoxDResult2
+            // 
+            textBoxDResult2.Location = new Point(242, 546);
+            textBoxDResult2.Name = "textBoxDResult2";
+            textBoxDResult2.Size = new Size(49, 23);
+            textBoxDResult2.TabIndex = 189;
+            // 
+            // textBoxEResult2
+            // 
+            textBoxEResult2.Location = new Point(306, 546);
+            textBoxEResult2.Name = "textBoxEResult2";
+            textBoxEResult2.Size = new Size(49, 23);
+            textBoxEResult2.TabIndex = 190;
+            // 
+            // textBoxFResult2
+            // 
+            textBoxFResult2.Location = new Point(372, 546);
+            textBoxFResult2.Name = "textBoxFResult2";
+            textBoxFResult2.Size = new Size(49, 23);
+            textBoxFResult2.TabIndex = 191;
+            // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1491, 672);
+            Controls.Add(textBoxFResult2);
+            Controls.Add(textBoxEResult2);
+            Controls.Add(textBoxDResult2);
+            Controls.Add(textBoxCResult2);
+            Controls.Add(textBoxBResult2);
+            Controls.Add(textBoxAResult2);
             Controls.Add(textBox5);
             Controls.Add(textBox6);
             Controls.Add(textBox7);
@@ -1953,12 +2004,12 @@ namespace abp
             Controls.Add(buttonB);
             Controls.Add(listViewForA);
             Controls.Add(buttonExecute);
-            Controls.Add(sonucSutunF);
-            Controls.Add(sonucSutunE);
-            Controls.Add(sonucSutunD);
-            Controls.Add(sonucSutunC);
-            Controls.Add(sonucSutunB);
-            Controls.Add(sonucSutunA);
+            Controls.Add(textBoxFResult1);
+            Controls.Add(textBoxEResult1);
+            Controls.Add(textBoxDResult1);
+            Controls.Add(textBoxCResult1);
+            Controls.Add(textBoxBResult1);
+            Controls.Add(textBoxAResult1);
             Controls.Add(label86);
             Controls.Add(label80);
             Controls.Add(label81);
@@ -2102,7 +2153,6 @@ namespace abp
             Controls.Add(A);
             Name = "MainView";
             Text = "Form1";
-            
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2252,12 +2302,12 @@ namespace abp
         private Label label84;
         private Label label85;
         private Label label86;
-        private TextBox sonucSutunA;
-        private TextBox sonucSutunB;
-        private TextBox sonucSutunC;
-        private TextBox sonucSutunD;
-        private TextBox sonucSutunE;
-        private TextBox sonucSutunF;
+        private TextBox textBoxAResult1;
+        private TextBox textBoxBResult1;
+        private TextBox textBoxCResult1;
+        private TextBox textBoxDResult1;
+        private TextBox textBoxEResult1;
+        private TextBox textBoxFResult1;
         private Button buttonExecute;
         private ListView listViewForA;
         private Button buttonB;
@@ -2293,5 +2343,11 @@ namespace abp
         private TextBox textBox6;
         private TextBox textBox7;
         private TextBox textBox8;
+        private TextBox textBoxAResult2;
+        private TextBox textBoxBResult2;
+        private TextBox textBoxCResult2;
+        private TextBox textBoxDResult2;
+        private TextBox textBoxEResult2;
+        private TextBox textBoxFResult2;
     }
 }
