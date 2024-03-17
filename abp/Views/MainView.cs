@@ -52,25 +52,20 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        //if ( textBoxAResult1 == null && textBoxAResult2 == null)
-        //{
-        //    return;
-        //}
-        //else if ( textBoxAResult1 != null && textBoxAResult2 == null) 
-        //{
-        //    textBoxAResult2 = secondTableIndex;
-        //}
-        //else if( textBoxAResult1 == null && textBoxAResult2 != null ) 
-        //{
+       int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text,out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
 
-        //}
-        //else if (textBoxAResult1 != null && textBoxAResult2 != null)
-        //{
-
-        //}
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
 
 
-        var result = _viewModel.ExecuteColumn(Columns.A, values);
+        var result = _viewModel.ExecuteColumn(Columns.A, values, firstIndexOverride, secondIndexOverride);
 
         listViewForA.Items.Clear();
         FillListViewWithResults(listViewForA, result);
@@ -85,7 +80,19 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        var result = _viewModel.ExecuteColumn(Columns.B, values);
+        int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
+
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
+
+        var result = _viewModel.ExecuteColumn(Columns.B, values, firstIndexOverride, secondIndexOverride);
 
         listViewForB.Items.Clear();
         FillListViewWithResults(listViewForB, result);
@@ -98,7 +105,19 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        var result = _viewModel.ExecuteColumn(Columns.C, values);
+        int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
+
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
+
+        var result = _viewModel.ExecuteColumn(Columns.C, values, firstIndexOverride, secondIndexOverride);
 
         listViewForC.Items.Clear();
         FillListViewWithResults(listViewForC, result);
@@ -112,7 +131,19 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        var result = _viewModel.ExecuteColumn(Columns.D, values);
+        int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
+
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
+
+        var result = _viewModel.ExecuteColumn(Columns.D, values, firstIndexOverride, secondIndexOverride);
 
         listViewForD.Items.Clear();
         FillListViewWithResults(listViewForD, result);
@@ -125,7 +156,19 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        var result = _viewModel.ExecuteColumn(Columns.E, values);
+        int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
+
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
+
+        var result = _viewModel.ExecuteColumn(Columns.E, values, firstIndexOverride, secondIndexOverride);
 
         listViewForE.Items.Clear();
         FillListViewWithResults(listViewForE, result);
@@ -138,7 +181,19 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        var result = _viewModel.ExecuteColumn(Columns.F, values);
+        int? firstIndexOverride = null;
+        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        {
+            firstIndexOverride = tempValue1;
+        }
+
+        int? secondIndexOverride = null;
+        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        {
+            secondIndexOverride = tempValue2;
+        }
+
+        var result = _viewModel.ExecuteColumn(Columns.F, values, firstIndexOverride, secondIndexOverride);
 
         listViewForF.Items.Clear();
         FillListViewWithResults(listViewForF, result);

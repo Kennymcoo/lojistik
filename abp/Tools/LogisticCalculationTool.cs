@@ -3,7 +3,7 @@
 internal static class LogisticCalculationTool
 {
 
-    public static List<string> Calculate(int[] firstTable, int[] secondTable, int[] intValues, bool isForBandD)
+    public static List<string> Calculate(int[] firstTable, int[] secondTable, int[] intValues, bool isForBandD, int? overrideFirstTableIndex = null, int? overrideSecondTableIndex = null)
     {
         int white1 = intValues[0];
         int green1 = intValues[1];
@@ -18,9 +18,15 @@ internal static class LogisticCalculationTool
         HashSet<double> uniqueValuesA = [];
         List<string> result = [];
 
-        for (int firstTableIndex = 0; firstTableIndex < firstTable.Length; firstTableIndex++)
+        int startFirstIndex = overrideFirstTableIndex ?? 0;
+        int endFirstIndex = overrideFirstTableIndex.HasValue ? overrideFirstTableIndex.Value + 1 : firstTable.Length;
+
+        int startSecondIndex = overrideSecondTableIndex ?? 0;
+        int endSecondIndex = overrideSecondTableIndex.HasValue ? overrideSecondTableIndex.Value + 1 : secondTable.Length;
+
+        for (int firstTableIndex = startFirstIndex; firstTableIndex < endFirstIndex; firstTableIndex++)
         {
-            for (int secondTableIndex = 0; secondTableIndex < secondTable.Length; secondTableIndex++)
+            for (int secondTableIndex = startSecondIndex; secondTableIndex < endSecondIndex; secondTableIndex++)
             {
                 double valueForA;
                 if (isForBandD)
@@ -33,6 +39,7 @@ internal static class LogisticCalculationTool
                     valueForA = ((firstTable[firstTableIndex] + secondTable[secondTableIndex] + white1)
                         * green1 + yellow1 + yellow2 + white2 + blue1 + red1 * black1) * purple1;
                 }
+                
 
                 if (uniqueValuesA.Add(valueForA) && valueForA <= 90 && valueForA >= -90)
                 {

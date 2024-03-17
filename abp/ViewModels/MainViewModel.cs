@@ -5,7 +5,7 @@ namespace abp.ViewModels;
 
 internal class MainViewModel
 {
-    internal List<string> ExecuteColumn(Columns column, int[] textboxValues)
+    internal List<string> ExecuteColumn(Columns column, int[] textboxValues, int? overrideFirstTableIndex = null, int? overrideSecondTableIndex = null)
     {
         int[] firstTable;
         int[] secondTable;
@@ -48,7 +48,7 @@ internal class MainViewModel
 
         }
 
-        return LogisticCalculationTool.Calculate(firstTable, secondTable, textboxValues, isForBandD);
+        return LogisticCalculationTool.Calculate(firstTable, secondTable, textboxValues, isForBandD, overrideFirstTableIndex, overrideSecondTableIndex);
     }
   
 
