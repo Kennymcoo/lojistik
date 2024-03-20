@@ -217,6 +217,13 @@ namespace abp
             textBoxDResult2 = new TextBox();
             textBoxEResult2 = new TextBox();
             textBoxFResult2 = new TextBox();
+            buttonClearA = new Button();
+            buttonClearB = new Button();
+            buttonClearC = new Button();
+            buttonClearD = new Button();
+            buttonClearE = new Button();
+            buttonClearF = new Button();
+            buttonClearAll = new Button();
             SuspendLayout();
             // 
             // A
@@ -1686,7 +1693,7 @@ namespace abp
             // 
             // listViewForB
             // 
-            listViewForB.Location = new Point(641, 33);
+            listViewForB.Location = new Point(644, 34);
             listViewForB.Name = "listViewForB";
             listViewForB.Size = new Size(154, 231);
             listViewForB.TabIndex = 153;
@@ -1726,7 +1733,7 @@ namespace abp
             // 
             // listViewForD
             // 
-            listViewForD.Location = new Point(458, 364);
+            listViewForD.Location = new Point(464, 364);
             listViewForD.Name = "listViewForD";
             listViewForD.Size = new Size(156, 231);
             listViewForD.TabIndex = 158;
@@ -1734,7 +1741,7 @@ namespace abp
             // 
             // listViewForE
             // 
-            listViewForE.Location = new Point(641, 364);
+            listViewForE.Location = new Point(644, 364);
             listViewForE.Name = "listViewForE";
             listViewForE.Size = new Size(154, 231);
             listViewForE.TabIndex = 159;
@@ -1804,7 +1811,7 @@ namespace abp
             // 
             // button1
             // 
-            button1.Location = new Point(1270, 609);
+            button1.Location = new Point(1236, 609);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 167;
@@ -1838,7 +1845,7 @@ namespace abp
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(458, 637);
+            textBox3.Location = new Point(464, 637);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(156, 23);
             textBox3.TabIndex = 172;
@@ -1846,7 +1853,7 @@ namespace abp
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(458, 609);
+            textBox4.Location = new Point(464, 608);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(156, 23);
             textBox4.TabIndex = 173;
@@ -1856,7 +1863,7 @@ namespace abp
             // 
             textBox9.Location = new Point(639, 271);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(156, 23);
+            textBox9.Size = new Size(159, 23);
             textBox9.TabIndex = 179;
             textBox9.Text = "1 0 2 3 4 5 6 7 8 9";
             // 
@@ -1864,7 +1871,7 @@ namespace abp
             // 
             textBox10.Location = new Point(639, 299);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(156, 23);
+            textBox10.Size = new Size(159, 23);
             textBox10.TabIndex = 178;
             textBox10.Text = "0 0 5 15 35 70 126";
             // 
@@ -1872,7 +1879,7 @@ namespace abp
             // 
             textBox11.Location = new Point(812, 271);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(156, 23);
+            textBox11.Size = new Size(163, 23);
             textBox11.TabIndex = 181;
             textBox11.Text = "2 0 3 6 10 15 21 28 36";
             // 
@@ -1880,7 +1887,7 @@ namespace abp
             // 
             textBox12.Location = new Point(812, 299);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(156, 23);
+            textBox12.Size = new Size(163, 23);
             textBox12.TabIndex = 180;
             textBox12.Text = "8 0 6 21 56 126";
             // 
@@ -1888,7 +1895,7 @@ namespace abp
             // 
             textBox5.Location = new Point(812, 638);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(156, 23);
+            textBox5.Size = new Size(163, 23);
             textBox5.TabIndex = 185;
             textBox5.Text = "2 0 3 6 10 15 21 28 36";
             // 
@@ -1896,7 +1903,7 @@ namespace abp
             // 
             textBox6.Location = new Point(812, 609);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(156, 23);
+            textBox6.Size = new Size(163, 23);
             textBox6.TabIndex = 184;
             textBox6.Text = "8 0 6 21 56 126";
             // 
@@ -1958,11 +1965,88 @@ namespace abp
             textBoxFResult2.Size = new Size(49, 23);
             textBoxFResult2.TabIndex = 191;
             // 
+            // buttonClearA
+            // 
+            buttonClearA.Location = new Point(545, 327);
+            buttonClearA.Name = "buttonClearA";
+            buttonClearA.Size = new Size(75, 23);
+            buttonClearA.TabIndex = 192;
+            buttonClearA.Text = "Clear list A";
+            buttonClearA.UseVisualStyleBackColor = true;
+            buttonClearA.Click += buttonClearA_Click;
+            // 
+            // buttonClearB
+            // 
+            buttonClearB.Location = new Point(723, 327);
+            buttonClearB.Name = "buttonClearB";
+            buttonClearB.Size = new Size(75, 23);
+            buttonClearB.TabIndex = 193;
+            buttonClearB.Text = "Clear list B";
+            buttonClearB.UseVisualStyleBackColor = true;
+            buttonClearB.Click += buttonClearB_Click;
+            // 
+            // buttonClearC
+            // 
+            buttonClearC.Location = new Point(900, 328);
+            buttonClearC.Name = "buttonClearC";
+            buttonClearC.Size = new Size(75, 23);
+            buttonClearC.TabIndex = 194;
+            buttonClearC.Text = "Clear list C";
+            buttonClearC.UseVisualStyleBackColor = true;
+            buttonClearC.Click += buttonClearC_Click;
+            // 
+            // buttonClearD
+            // 
+            buttonClearD.Location = new Point(545, 666);
+            buttonClearD.Name = "buttonClearD";
+            buttonClearD.Size = new Size(75, 23);
+            buttonClearD.TabIndex = 195;
+            buttonClearD.Text = "Cemil";
+            buttonClearD.UseVisualStyleBackColor = true;
+            buttonClearD.Click += buttonClearD_Click;
+            // 
+            // buttonClearE
+            // 
+            buttonClearE.Location = new Point(723, 666);
+            buttonClearE.Name = "buttonClearE";
+            buttonClearE.Size = new Size(75, 23);
+            buttonClearE.TabIndex = 196;
+            buttonClearE.Text = "Mehmet";
+            buttonClearE.UseVisualStyleBackColor = true;
+            buttonClearE.Click += buttonClearE_Click;
+            // 
+            // buttonClearF
+            // 
+            buttonClearF.Location = new Point(900, 667);
+            buttonClearF.Name = "buttonClearF";
+            buttonClearF.Size = new Size(75, 23);
+            buttonClearF.TabIndex = 197;
+            buttonClearF.Text = "Aykut";
+            buttonClearF.UseVisualStyleBackColor = true;
+            buttonClearF.Click += buttonClearF_Click;
+            // 
+            // buttonClearAll
+            // 
+            buttonClearAll.Location = new Point(990, 609);
+            buttonClearAll.Name = "buttonClearAll";
+            buttonClearAll.Size = new Size(75, 23);
+            buttonClearAll.TabIndex = 198;
+            buttonClearAll.Text = "Kıtmirağbi";
+            buttonClearAll.UseVisualStyleBackColor = true;
+            buttonClearAll.Click += buttonClearAll_Click;
+            // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1491, 672);
+            ClientSize = new Size(1491, 694);
+            Controls.Add(buttonClearAll);
+            Controls.Add(buttonClearF);
+            Controls.Add(buttonClearE);
+            Controls.Add(buttonClearD);
+            Controls.Add(buttonClearC);
+            Controls.Add(buttonClearB);
+            Controls.Add(buttonClearA);
             Controls.Add(textBoxFResult2);
             Controls.Add(textBoxEResult2);
             Controls.Add(textBoxDResult2);
@@ -2349,5 +2433,12 @@ namespace abp
         private TextBox textBoxDResult2;
         private TextBox textBoxEResult2;
         private TextBox textBoxFResult2;
+        private Button buttonClearA;
+        private Button buttonClearB;
+        private Button buttonClearC;
+        private Button buttonClearD;
+        private Button buttonClearE;
+        private Button buttonClearF;
+        private Button buttonClearAll;
     }
 }
