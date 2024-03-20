@@ -42,34 +42,67 @@ public partial class MainView : Form
 
     }
 
+    private void ProcessAndDisplaySum(TextBox inputTextBox)
+    {
+        if (int.TryParse(inputTextBox.Text, out int number))
+        {
+            
+            var digits = inputTextBox.Text.Select(digit => int.Parse(digit.ToString())).ToArray();
+
+          
+        }
+     
+    }
+
     private void ButtonA_Click(object sender, EventArgs e)
     {
-        TextBox[] textBoxes = [textBoxA1, textBoxA2, textBoxA3, textBoxA4, textBoxA5, textBoxA6, textBoxA7, textBoxA8, textBoxA9];
-
-        
-        
+        TextBox[] textBoxes = { textBoxA1, textBoxA2, textBoxA3, textBoxA4, textBoxA5, textBoxA6, textBoxA7, textBoxA8, textBoxA9 };
 
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-       int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text,out int tempValue1))
+        int[] digitsA1 = null;
+        int[] digitsA2 = null;
+
+        if (textBoxAResult1.Text.Contains(",") || int.TryParse(textBoxAResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsA1 = textBoxAResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        // textBoxAResult2 için dönüþüm
+        if (textBoxAResult2.Text.Contains(",") || int.TryParse(textBoxAResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsA2 = textBoxAResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
+        if (digitsA1 == null && digitsA2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.A, values);
 
-        var result = _viewModel.ExecuteColumn(Columns.A, values, firstIndexOverride, secondIndexOverride);
+            listViewForA.Items.Clear();
+            FillListViewWithResults(listViewForA, result);
+        }
+        else
+        {
+            foreach (var digitA1 in digitsA1)
+            {
+                foreach (var digitA2 in digitsA2)
+                {
+                    var calculationResult = ((digitA1 - digitA2 - int.Parse(textBoxA1.Text)) * int.Parse(textBoxA2.Text) + int.Parse(textBoxA3.Text) + int.Parse(textBoxA4.Text) + int.Parse(textBoxA5.Text) + int.Parse(textBoxA6.Text) + int.Parse(textBoxA7.Text) * int.Parse(textBoxA8.Text)) + int.Parse(textBoxA9.Text);
+                    
 
-        listViewForA.Items.Clear();
-        FillListViewWithResults(listViewForA, result);
+                    
+                    listViewForA.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
     }
+
 
 
 
@@ -80,22 +113,48 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+
+        int[] digitsB1 = null;
+        int[] digitsB2 = null;
+
+        if (textBoxBResult1.Text.Contains(",") || int.TryParse(textBoxBResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsB1 = textBoxBResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        // textBoxAResult2 için dönüþüm
+        if (textBoxBResult2.Text.Contains(",") || int.TryParse(textBoxBResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsB2 = textBoxBResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        var result = _viewModel.ExecuteColumn(Columns.B, values, firstIndexOverride, secondIndexOverride);
+        if (digitsB1 == null && digitsB2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.B, values);
 
-        listViewForB.Items.Clear();
-        FillListViewWithResults(listViewForB, result);
+            listViewForB.Items.Clear();
+            FillListViewWithResults(listViewForB, result);
+        }
+        else
+        {
+            foreach (var digitB1 in digitsB1)
+            {
+                foreach (var digitB2 in digitsB2)
+                {
+                    var calculationResult = ((digitB1 - digitB2 - int.Parse(textBoxB1.Text)) * int.Parse(textBoxB2.Text) + int.Parse(textBoxB3.Text) + int.Parse(textBoxB4.Text) + int.Parse(textBoxB5.Text) + int.Parse(textBoxB6.Text) + int.Parse(textBoxB7.Text) * int.Parse(textBoxB8.Text)) + int.Parse(textBoxB9.Text);
+
+
+
+                    listViewForB.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
+
     }
 
     private void ButtonC_Click(object sender, EventArgs e)
@@ -105,22 +164,46 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+        int[] digitsC1 = null;
+        int[] digitsC2 = null;
+
+        if (textBoxCResult1.Text.Contains(",") || int.TryParse(textBoxCResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsC1 = textBoxCResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+        
+        if (textBoxCResult2.Text.Contains(",") || int.TryParse(textBoxCResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsC2 = textBoxCResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        var result = _viewModel.ExecuteColumn(Columns.C, values, firstIndexOverride, secondIndexOverride);
+        if (digitsC1 == null && digitsC2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.C, values);
 
-        listViewForC.Items.Clear();
-        FillListViewWithResults(listViewForC, result);
+            listViewForB.Items.Clear();
+            FillListViewWithResults(listViewForC, result);
+        }
+        else
+        {
+            foreach (var digitC1 in digitsC1)
+            {
+                foreach (var digitC2 in digitsC2)
+                {
+                    var calculationResult = ((digitC1 - digitC2 - int.Parse(textBoxC1.Text)) * int.Parse(textBoxC2.Text) + int.Parse(textBoxC3.Text) + int.Parse(textBoxC4.Text) + int.Parse(textBoxC5.Text) + int.Parse(textBoxC6.Text) + int.Parse(textBoxC7.Text) * int.Parse(textBoxC8.Text)) + int.Parse(textBoxC9.Text);
+
+
+
+                    listViewForC.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
 
     }
 
@@ -131,22 +214,47 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+
+        int[] digitsD1 = null;
+        int[] digitsD2 = null;
+
+        if (textBoxDResult1.Text.Contains(",") || int.TryParse(textBoxDResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsD1 = textBoxDResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+
+        if (textBoxDResult2.Text.Contains(",") || int.TryParse(textBoxDResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsD2 = textBoxDResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        var result = _viewModel.ExecuteColumn(Columns.D, values, firstIndexOverride, secondIndexOverride);
+        if (digitsD1 == null && digitsD2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.D, values);
 
-        listViewForD.Items.Clear();
-        FillListViewWithResults(listViewForD, result);
+            listViewForD.Items.Clear();
+            FillListViewWithResults(listViewForD, result);
+        }
+        else
+        {
+            foreach (var digitD1 in digitsD1)
+            {
+                foreach (var digitD2 in digitsD2)
+                {
+                    var calculationResult = ((digitD1 - digitD2 - int.Parse(textBoxD1.Text)) * int.Parse(textBoxD2.Text) + int.Parse(textBoxD3.Text) + int.Parse(textBoxD4.Text) + int.Parse(textBoxD5.Text) + int.Parse(textBoxD6.Text) + int.Parse(textBoxD7.Text) * int.Parse(textBoxD8.Text)) + int.Parse(textBoxD9.Text);
+
+
+
+                    listViewForD.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
     }
 
     private void ButtonE_Click(object sender, EventArgs e)
@@ -156,22 +264,47 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+
+        int[] digitsE1 = null;
+        int[] digitsE2 = null;
+
+        if (textBoxEResult1.Text.Contains(",") || int.TryParse(textBoxEResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsE1 = textBoxEResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+
+        if (textBoxEResult2.Text.Contains(",") || int.TryParse(textBoxEResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsE2 = textBoxEResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        var result = _viewModel.ExecuteColumn(Columns.E, values, firstIndexOverride, secondIndexOverride);
+        if (digitsE1 == null && digitsE2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.E, values);
 
-        listViewForE.Items.Clear();
-        FillListViewWithResults(listViewForE, result);
+            listViewForE.Items.Clear();
+            FillListViewWithResults(listViewForE, result);
+        }
+        else
+        {
+            foreach (var digitE1 in digitsE1)
+            {
+                foreach (var digitE2 in digitsE2)
+                {
+                    var calculationResult = ((digitE1 - digitE2 - int.Parse(textBoxE1.Text)) * int.Parse(textBoxE2.Text) + int.Parse(textBoxE3.Text) + int.Parse(textBoxE4.Text) + int.Parse(textBoxE5.Text) + int.Parse(textBoxE6.Text) + int.Parse(textBoxE7.Text) * int.Parse(textBoxE8.Text)) + int.Parse(textBoxE9.Text);
+
+
+
+                    listViewForE.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
     }
 
     private void ButtonF_Click(object sender, EventArgs e)
@@ -181,22 +314,47 @@ public partial class MainView : Form
         if (!TextboxValueExtractionTool.Extract(textBoxes, out int[] values))
             return;
 
-        int? firstIndexOverride = null;
-        if (int.TryParse(textBoxAResult1.Text, out int tempValue1))
+
+        int[] digitsF1 = null;
+        int[] digitsF2 = null;
+
+        if (textBoxFResult1.Text.Contains(",") || int.TryParse(textBoxFResult1.Text, out int _))
         {
-            firstIndexOverride = tempValue1;
+            digitsF1 = textBoxFResult1.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        int? secondIndexOverride = null;
-        if (int.TryParse(textBoxAResult2.Text, out int tempValue2))
+
+        if (textBoxFResult2.Text.Contains(",") || int.TryParse(textBoxFResult2.Text, out int _))
         {
-            secondIndexOverride = tempValue2;
+            digitsF2 = textBoxFResult2.Text.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(int.Parse)
+                                 .ToArray();
         }
 
-        var result = _viewModel.ExecuteColumn(Columns.F, values, firstIndexOverride, secondIndexOverride);
+        if (digitsF1 == null && digitsF2 == null)
+        {
+            var result = _viewModel.ExecuteColumn(Columns.F, values);
 
-        listViewForF.Items.Clear();
-        FillListViewWithResults(listViewForF, result);
+            listViewForF.Items.Clear();
+            FillListViewWithResults(listViewForF, result);
+        }
+        else
+        {
+            foreach (var digitF1 in digitsF1)
+            {
+                foreach (var digitF2 in digitsF2)
+                {
+                    var calculationResult = ((digitF1 - digitF2 - int.Parse(textBoxF1.Text)) * int.Parse(textBoxF2.Text) + int.Parse(textBoxF3.Text) + int.Parse(textBoxF4.Text) + int.Parse(textBoxF5.Text) + int.Parse(textBoxF6.Text) + int.Parse(textBoxF7.Text) * int.Parse(textBoxF8.Text)) + int.Parse(textBoxF9.Text);
+
+
+
+                    listViewForF.Items.Add(calculationResult.ToString());
+                }
+            }
+
+        }
     }
     private bool AreAllItemsUnique(params string[] items)
     {
@@ -292,10 +450,6 @@ public partial class MainView : Form
 
 
     }
-
-    
-
-    
 
    
 }

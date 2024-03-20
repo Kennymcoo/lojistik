@@ -48,7 +48,7 @@ internal class MainViewModel
 
         }
 
-        return LogisticCalculationTool.Calculate(firstTable, secondTable, textboxValues, isForBandD, overrideFirstTableIndex, overrideSecondTableIndex);
+        return LogisticCalculationTool.Calculate(firstTable, secondTable, textboxValues, isForBandD );
     }
   
 
