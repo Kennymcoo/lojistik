@@ -470,8 +470,7 @@ public partial class MainView : Form
                                 if (AreAllItemsUnique(itemA, itemB, itemC, itemD, itemE, itemF))
                                 {
                                     string resultAll = $"{itemA}, {itemB}, {itemC}, {itemD}, {itemE}, {itemF}";
-                                    //FillListViewWithResults(listViewShowAll, resultAll);
-                                    listViewShowAll.Items.Add(resultAll);
+                                    result.Add(resultAll); // Add each combination to the result list
                                     totalCombinations++;
                                 }
                             }
@@ -479,6 +478,12 @@ public partial class MainView : Form
                     }
                 }
             }
+        }
+
+        // After generating all combinations, add them to the ListView
+        foreach (string combination in result)
+        {
+            listViewShowAll.Items.Add(combination); // Add each combination as a separate item
         }
 
         MessageBox.Show($"Tüm kombinasyonlarýn sayýsý: {totalCombinations}", "Kombinasyon Sayýsý");
@@ -523,5 +528,25 @@ public partial class MainView : Form
     private void buttonClearAll_Click(object sender, EventArgs e)
     {
         listViewShowAll.Items.Clear();
+    }
+
+    private void buttonExport_Click(object sender, EventArgs e)
+    {
+        string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        string filePath = Path.Combine(desktopPath, "Kombinasyonlar.txt");
+
+        using (StreamWriter sw = new StreamWriter(filePath))
+        {
+            foreach (ListViewItem item in listViewShowAll.Items)
+            {
+                for (int i = 0; i < item.SubItems.Count; i++)
+                {
+                    // Her bir alt öðeyi yazdýr
+                    sw.Write(item.SubItems[i].Text + (i < item.SubItems.Count - 1 ? ", " : ""));
+                }
+                sw.WriteLine(); // Her öðeden sonra yeni bir satýra geç
+            }
+        }
+        MessageBox.Show($"Kombinasyonlar {filePath} dosyasýna baþarýyla kaydedildi.", "Kombinasyonlar Kaydedildi");
     }
 }

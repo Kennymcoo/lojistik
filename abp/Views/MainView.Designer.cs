@@ -224,6 +224,7 @@ namespace abp
             buttonClearE = new Button();
             buttonClearF = new Button();
             buttonClearAll = new Button();
+            buttonExport = new Button();
             SuspendLayout();
             // 
             // A
@@ -1811,7 +1812,7 @@ namespace abp
             // 
             // button1
             // 
-            button1.Location = new Point(1236, 609);
+            button1.Location = new Point(1109, 609);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 167;
@@ -1822,6 +1823,7 @@ namespace abp
             // listViewShowAll
             // 
             listViewShowAll.Location = new Point(990, 33);
+            listViewShowAll.Margin = new Padding(3, 4, 3, 4);
             listViewShowAll.Name = "listViewShowAll";
             listViewShowAll.Size = new Size(321, 562);
             listViewShowAll.TabIndex = 168;
@@ -2035,11 +2037,22 @@ namespace abp
             buttonClearAll.UseVisualStyleBackColor = true;
             buttonClearAll.Click += buttonClearAll_Click;
             // 
+            // buttonExport
+            // 
+            buttonExport.Location = new Point(1236, 609);
+            buttonExport.Name = "buttonExport";
+            buttonExport.Size = new Size(75, 23);
+            buttonExport.TabIndex = 199;
+            buttonExport.Text = "Export";
+            buttonExport.UseVisualStyleBackColor = true;
+            buttonExport.Click += buttonExport_Click;
+            // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1491, 694);
+            Controls.Add(buttonExport);
             Controls.Add(buttonClearAll);
             Controls.Add(buttonClearF);
             Controls.Add(buttonClearE);
@@ -2235,6 +2248,7 @@ namespace abp
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(A);
+            MinimizeBox = false;
             Name = "MainView";
             Text = "Form1";
             ResumeLayout(false);
@@ -2440,5 +2454,6 @@ namespace abp
         private Button buttonClearE;
         private Button buttonClearF;
         private Button buttonClearAll;
+        private Button buttonExport;
     }
 }
